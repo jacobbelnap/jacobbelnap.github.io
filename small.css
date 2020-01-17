@@ -1,0 +1,14 @@
+/*HTML SELECTORS*/
+body {
+   font-size: 10pt;
+   text-align: center;
+}
+img {
+   width: 300px;
+}
+
+/* ID SELECTORS */
+#grid {
+   display: grid;
+   grid-template-columns: 1fr;
+}
