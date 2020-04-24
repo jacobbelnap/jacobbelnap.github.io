@@ -5,6 +5,7 @@
    }
    img {
       width: 500px;
+      float: right;
    }
    p{
       color: blue;
