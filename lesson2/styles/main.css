@@ -43,7 +43,7 @@ ul {
    max-width: 600px;
 }
 
-.gridarea {
+.grid {
    display: grid;
    grid-gap: 10px;
    max-width:80%;
