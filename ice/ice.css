@@ -1,0 +1,149 @@
+body{
+   background-color: #e7ecf2;
+   margin: 0 auto;
+   max-width: 960px;
+   font-family: Verdana,'Open Sans', sans-serif;
+}
+main{
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   grid-template-rows: 100px 100px;
+   font-size: 15px;
+   text-align: center;
+   
+}
+.sec1, .sec2, .sec3 {
+   border-bottom: 8px solid #d6e9f8;
+}
+img {
+   margin-top: 60px;
+}
+.month-large h3{
+   padding-top:15px;
+}
+.sec1{
+   grid-column: 1/2;
+   grid-row: 2/3;
+   background-color: white;
+   margin:30px;
+   padding-bottom: 450px;
+}
+ul {
+margin-left: -40px;
+}
+.sec2 {
+   grid-column: 2/3;
+   grid-row: 2/3;
+   background-color: white;
+   margin:20px;
+   position: relative;
+   padding-bottom: 500px;
+}
+
+.popular {
+   position: absolute;
+   top: -65px;
+   padding-top: 15px;
+   left: 0%;
+   right: 0%;
+   color:white;
+   background-color: #12aaeb;
+   text-align: center;
+   height: 35px;
+   font-weight: 600;
+}
+
+.sec3 {
+   grid-column: 3/4;
+   grid-row: 2/3;
+   background-color: white;
+   margin:30px;
+   padding-bottom: 450px;
+}
+
+h5 {
+   text-align:center;
+   color: #12aaeb;
+   font-size: 1.2em;
+}
+.sides{
+   font-size: .85em;
+}
+.three, .five, .nine, h3 {
+   color: #12aaeb;
+}
+.button-large {
+   background-color: #ffcf2d;
+   color: white;
+}
+.button-large{
+   width: 150px;
+   height: 40px;
+   font-weight: 800;
+   font-size: 16px;
+}
+.button-small {
+   background-color: lightgray;
+   color: white;
+   width: 80px;
+   height: 25px;
+}
+
+ul {
+   list-style-type: none;
+   line-height: 1.6rem;
+   color:gray;
+}
+.sec2 ul{
+   line-height: 2rem;
+}
+.month-large{
+position: relative;
+}
+.month-large h3{
+   font-weight: 100;
+}
+.month-small{
+position: relative;
+}
+.month-small h3{
+   font-weight: 100;
+   margin-top: 30px;
+}
+.button-small{
+   width: 120px;
+   height: 35px;
+   font-size: 14px;
+}
+.three, .nine{
+   font-size: 50px;
+   font-weight: 800;
+}
+.five {
+   font-size: 65px;
+   font-weight: 800;
+   position: absolute;
+   top: 3px;
+   left: 110px;
+}
+.three, .nine, span{
+   position: absolute;
+   top: -9px;
+   left: 105px;
+}
+.month-small h3{
+   font-size: 24px;
+}
+.month-small .per{
+   font-size: 16px;
+   margin-top: -6px;
+}
+.month-large h3{
+   font-size: 28px;
+   margin-top: -6px;
+}
+.month-large .per{
+   font-size: 20px;
+   margin-top: -16px;
+}
+
