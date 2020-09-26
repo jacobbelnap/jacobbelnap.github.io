@@ -48,7 +48,7 @@ ul {
 }
 
 /* ID SELECTORS */
-.grid {
+main {
    display: grid;
    grid-gap: 10px;
    max-width:80%;
@@ -60,4 +60,13 @@ ul {
    border-radius: 15px;
    text-align: left;
    padding: 12px;
+}
+.one {
+   grid-column: 1/2;
+}
+.two {
+   grid-column: 2/3;
+}
+.three {
+   grid-column: 3/4;
 }
