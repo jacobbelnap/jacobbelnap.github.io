@@ -44,8 +44,6 @@ main {
    grid-template-columns: 1fr;
 }
 
-
-
 section {
    border: darkslategrey 1px solid;
    border-radius: 15px;
