@@ -1,0 +1,23 @@
+.primary {
+   background-color: #52B1FF;
+}
+.secondary {
+   background-color: #214766;
+}
+.accent1 {
+   background-color: #397CB3;
+}
+.accent2 {
+   background-color: #6791B3;
+}
+main {
+   background-color: lightgray;
+   text-align: center;
+}
+
+main div{
+   padding: 5px;
+}
+.typography{
+   background-color: white;
+}
