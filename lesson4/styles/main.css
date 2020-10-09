@@ -1,0 +1,108 @@
+body {
+   background-color: lightgray;
+   margin: 0 auto;
+   font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+}
+
+.navigation li{
+   list-style-type: none;
+   font-size: 20px;
+   display: block;
+   background-color: blue;
+}
+.top {
+   background-color: #397CB3;
+   padding: 8px 0px;
+   color: #214366;
+   height: 100px;
+   text-shadow: 1.5px 1.5px 0 black;
+}
+header a{
+   color: white;
+   text-decoration: none;
+   font-size: 1.1em;
+}
+.bottom {
+   background-color: #214366;
+}
+
+main {
+   margin: 50px;
+   background-color: white;
+}
+.meat {
+   padding: 10px;
+}
+.main-wrapper {
+   background-color: #214366;
+    padding:20px;
+    margin-top: 20px;
+    text-align: center;
+    color: white;
+}
+footer {
+   text-decoration: none;
+   padding-bottom: 5px;
+   color: #214366;
+   margin: 50px;
+   text-align: center;
+   font-size: 1em;
+}
+footer a {
+   font-size: 1em;
+   color: #214366;
+}
+
+header {
+   display: grid;
+   grid-template-columns: 320px 1fr;
+   grid-template-rows: 1fr 60px;
+}
+.left {
+   grid-column: 1;
+   grid-row: 1/3;
+   background-color: #397CB3;
+   position: relative;
+   z-index: 9;
+}
+.left::before {
+   content: "";
+   position: absolute;
+   z-index: -1;
+   top: 0;
+   right: 0;
+   bottom: 60px;
+   left: 0;
+   background-color: #214366;
+}
+.rightup {
+   grid-column: 2/3;
+   grid-row: 1/2;
+   background-color: #397B3;
+   background-color: #214366;
+}
+.rightdown {
+   grid-column: 2/3;
+   grid-row: 2/3;
+   background-color: #21466;
+   background-color: #397CB3;
+}
+.logo img{
+  margin-left: 8px;
+  margin-top: 8px;
+  width: 300px;
+}
+
+#banner {
+   max-width: 100%;
+}
+
+@media screen and (min-width:679px){
+   .navigation li{
+       display: inline;
+       padding: 12px;    
+       background-color: red;
+   }
+   
+}
+
