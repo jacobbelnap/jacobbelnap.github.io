@@ -44,6 +44,10 @@ footer a {
    font-size: 1em;
    color: #214366;
 }
+span {
+  float: left;
+  margin-left: 10px;
+}
 
 @media screen and (min-width:400px){
    .navigation li{
