@@ -10,13 +10,7 @@ body {
    display: block;
    background-color: blue;
 }
-.top {
-   background-color: #397CB3;
-   padding: 8px 0px;
-   color: #214366;
-   height: 100px;
-   text-shadow: 1.5px 1.5px 0 black;
-}
+
 header a{
    color: white;
    text-decoration: none;
@@ -78,24 +72,45 @@ header {
 .rightup {
    grid-column: 2/3;
    grid-row: 1/2;
-   background-color: #397B3;
    background-color: #214366;
+   padding: 8px 0px;
+   color: white;
+   height: 100px;
+   text-shadow: 1.5px 1.5px 0 black;
+   line-height: 1em;
 }
+.rightup h3 {
+   margin-left: 20px;
+}
+
 .rightdown {
    grid-column: 2/3;
    grid-row: 2/3;
-   background-color: #21466;
    background-color: #397CB3;
 }
 .logo img{
   margin-left: 8px;
-  margin-top: 8px;
+  margin-top: 6px;
   width: 300px;
 }
 
 #banner {
    max-width: 100%;
 }
+.banner{
+   position: relative;
+}
+.banner h2 {
+   position: absolute;
+   top: 10%;
+   left: 50%;
+   font-size: 3em;
+   color: red;
+   text-shadow: 1.5px 1.5px 0 white;
+
+
+}
+
 
 @media screen and (min-width:679px){
    .navigation li{
