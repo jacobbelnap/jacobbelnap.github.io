@@ -113,7 +113,10 @@ header {
    font-size: 3em;
    color: red;
    text-shadow: 1.5px 1.5px 0 white;
+   padding-right: 5px;
 }
+
+
 
 .week {
    display: grid;
@@ -132,11 +135,20 @@ header {
    text-align: center;
 }
 
+
+
+/*
+LARGE VIEW
+*/
+
+
+
+
 @media screen and (min-width:1050px){
    .navigation li{
        display: inline;
+       background-color: red;
        padding: 12px;    
-       background-color: blue;
        border-radius: 5px 5px 5px 5px;
    }
    .navigation li:first-child {
@@ -145,6 +157,13 @@ header {
    }
    
 }
+
+
+
+/*
+SMALL VIEW
+*/
+
 
 @media screen and (max-width:688px){
    .navigation li:first-child {
@@ -168,6 +187,15 @@ header {
 
       background-color: aqua;
    }
+   .banner h2 {
+      font-size: 2em;
+      top: 10%;
+      left: 45%;
+   }
+   header h3{
+      font-size: .85em;
+   }
+ 
   
    header {
       grid-template-columns: 220px 1fr;
@@ -196,6 +224,6 @@ header {
       background-color: #397CB3;
       grid-column: 1/3;
    }
- 
+   
    
 }
