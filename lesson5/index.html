@@ -1,0 +1,103 @@
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <meta name="description" content="Assigment portal page for Jacob Belnap in WDD 230 - Web Front-end Development at Brigham Young University - Idaho">
+   <title>Mr. Snowday</title>
+   <link rel="stylesheet" href="styles/main.css">
+   <link rel="stylesheet" href="styles/normalize.css">
+   <link href="https://fonts.googleapis.com/css?family=Mukta&display=swap" rel="stylesheet">
+</head>
+<body>
+<header>  
+   <div class="left">
+      <span class="logo"><img src="/lesson4/images/Picture1.png" alt="logo"></span>
+   </div>
+
+   <div class="rightup">
+      <h1>Mr. Snowday</h1>
+      <h3>"The Snowman that Actually Talks"</h3>
+   </div>
+  
+   <div class="rightdown">
+      <ul class="navigation responsive">
+            <li><a href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
+            <li class="navigation-item"><a href="index.html">Home</a></li>
+            <li class="navigation-item"><a href="index.html">Preston</a></li>
+            <li class="navigation-item"><a href="index.html">Soda Springs</a></li>
+            <li class="navigation-item"><a href="index.html">Fish Haven</a></li>
+            <li class="navigation-item"><a href="index.html">Storm Center</a></li>
+            <li class="navigation-item"><a href="index.html">Gallery</a></li>
+           
+      </ul>
+   </div>
+</header>
+<main>
+   <div class="banner">
+      <img id="banner" src="/lesson4/images/banner1.png" alt="bannerPreston">
+      <h2> Preston, ID</h2>
+   </div>
+   <div class="forecast">
+      <h2>Five Day Forecast</h2>
+      <div class="week">
+         <div class="weekday">
+            <h3>Day</h3>
+            <img src="/lesson4/images/sunny.png" alt="sunny">
+            <p>48℉</p>
+         </div>
+         <div class="weekday">
+            <h3>Day</h3>
+            <img src="/lesson4/images/cloudy.png" alt="cloudy">
+            <p>45℉</p>
+         </div>
+         <div class="weekday">
+            <h3>Day</h3>
+            <img src="/lesson4/images/cloudy.png" alt="cloudy">
+            <p>42℉</p>
+         </div>
+         <div class="weekday">
+            <h3>Day</h3>
+            <img src="/lesson4/images/rainy.png" alt="rainy">
+            <p>38℉</p>
+         </div>
+         <div class="weekday">
+            <h3>Day</h3>
+            <img src="/lesson4/images/snowy.png" alt="snowy">
+            <p>29℉</p>
+         </div>
+      </div>
+   </div>
+   <div class="article">
+      <h2>Article Title</h2>
+      <p>
+         In the cafeteria, Plankton attempts to eat his food, but a purple cellmate grabs some of his beans 
+         and eats them. Another green cellmate drinks Plankton's milk and then Plankton gets eaten by a light 
+         blue cellmate. Plankton yells out that he is the evilest genius and yells out his name. The purple 
+         cellmate, thinking the light blue cellmate is talking, does not believe him, saying he and the others 
+         are fans of Plankton. Plankton calls out his name again and then the purple cellmate punches the light 
+         blue cellmate in the stomach, which causes Plankton to be punched out and crash into the wall. The 
+         purple and green cellmates start to beat up the light blue cellmate until Plankton breaks it up. 
+         Plankton introduces himself to the cellmates and they say how they are going to do everything that 
+         Plankton says. Plankton gets excited saying how easily he could get the Krabby Patty secret formula. 
+      </p>
+   </div>
+</main>
+<footer>
+    <p>
+       &copy; <span id="curYear"></span>
+       &vert; Jacob C Belnap
+       &vert; Idaho 
+       &vert;
+       <a href="http://www.byui.edu" target="_blank">BYU-Idaho Online Learning</a>
+    </p>
+    <p> 
+       Last Updated: 
+       <span id="lastModified"></span>
+    </p>
+ </footer>
+ <script src="scripts/curDate.js"></script>
+ <script src="scripts/toggleMenu.js"></script>
+
+</body>
+</html>
