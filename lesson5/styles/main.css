@@ -15,8 +15,16 @@ body {
 }
 .navigation li{
    font-size: 20px;
+}
+.navigation li:not(:first-child){
    display: none;
 }
+.responsive li:not(:first-child) {
+   display: block;
+   background-color: aqua;
+}
+
+
 
 header a{
    color: white;
@@ -151,6 +159,9 @@ LARGE VIEW
        padding: 12px;    
        border-radius: 5px 5px 5px 5px;
    }
+   .navigation {
+      display: inline;
+   }
    .navigation li:first-child {
       display: none;
       
@@ -170,7 +181,7 @@ SMALL VIEW
       display: block;
       font-size: 20px;
       background-color: #397CB3;
-      float: right;
+      float: none;
       height: auto;
       padding: 4px;
       margin-top: -12px;
@@ -179,14 +190,20 @@ SMALL VIEW
    .navigation {
       text-align: center;
    }
-   .navigation li{
-      display: none;
-   }
-   .responsive li:not(:first-child){
-      display: block;
 
+
+   .navigation li:not(:first-child){
+      display: none;
+  }
+  .responsive li:not(:first-child) {
+      display: block;
       background-color: aqua;
-   }
+  }
+
+
+
+
+
    .banner h2 {
       font-size: 2em;
       top: 10%;
@@ -196,7 +213,6 @@ SMALL VIEW
       font-size: .85em;
    }
  
-  
    header {
       grid-template-columns: 220px 1fr;
       grid-template-rows: 113px 40px;

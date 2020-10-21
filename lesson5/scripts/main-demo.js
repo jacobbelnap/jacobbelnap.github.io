@@ -10,6 +10,7 @@ let daysOfWeek = [
    'Saturday'
 ];
 
+
 let fullDate = daysOfWeek[curDate.getDay()];
 
 let dayofMonth = curDate.getDate();
