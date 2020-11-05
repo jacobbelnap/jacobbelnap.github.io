@@ -38,7 +38,7 @@ header a{
    background-color: #214366;
 }
 main {
-   margin: 50px;
+   margin: 40px;
 }
 .main-wrapper {
     text-align: center; 
@@ -163,6 +163,9 @@ header {
    .weekday {
       outline:3px solid #214366;
       margin: 7px;
+   }
+   main {
+      margin: 50px;
    }
 }
 
