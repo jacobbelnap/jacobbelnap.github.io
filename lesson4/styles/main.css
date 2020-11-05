@@ -3,35 +3,45 @@ body {
    margin: 0 auto;
    font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
 }
+.navigation {
+   list-style: none;
+}
 
 .navigation li{
    list-style-type: none;
    font-size: 20px;
-   display: block;
-   background-color: blue;
+   display: none;
+   text-align: center;
+   line-height: 1.5em;
+   margin-right: 20px;
 }
 
 header a{
-   color: white;
    text-decoration: none;
+   color: white;
    font-size: 1.1em;
 }
+.navigation li:first-child{
+   display: block;
+}
+.navigation li:hover {
+   opacity: .5;
+}
+.responsive li{
+   display: block;
+}
+
+/* *******from pen********* */
+
+
 .bottom {
    background-color: #214366;
 }
-
 main {
    margin: 50px;
 }
-.meat {
-   padding: 10px;
-}
 .main-wrapper {
-   background-color: #214366;
-    padding:20px;
-    margin-top: 20px;
-    text-align: center;
-    color: white;
+    text-align: center; 
 }
 footer {
    text-decoration: none;
@@ -48,49 +58,38 @@ footer a {
 
 header {
    display: grid;
-   grid-template-columns: 320px 1fr;
-   grid-template-rows: 1fr 60px;
+   grid-template-columns: 166px 1fr;
+   grid-template-rows: 90px 1fr;
 }
 .left {
-   grid-column: 1;
-   grid-row: 1/3;
-   background-color: #397CB3;
-   position: relative;
-   z-index: 9;
-}
-.left::before {
-   content: "";
-   position: absolute;
-   z-index: -1;
-   top: 0;
-   right: 0;
-   bottom: 60px;
-   left: 0;
+   grid-column: 1/2;
+   grid-row: 1/2;
    background-color: #214366;
 }
+
 .rightup {
    grid-column: 2/3;
    grid-row: 1/2;
    background-color: #214366;
-   padding: 8px 0px;
+   
    color: white;
-   height: 100px;
    text-shadow: 1.5px 1.5px 0 black;
    line-height: 1em;
 }
 .rightup h3 {
    margin-left: 20px;
+   font-size: 14px;
 }
 
 .rightdown {
-   grid-column: 2/3;
+   grid-column: 1/3;
    grid-row: 2/3;
    background-color: #397CB3;
 }
 .logo img{
   margin-left: 8px;
-  margin-top: 6px;
-  width: 300px;
+  margin-top: 3.5px;
+  width: 150px;
 }
 
 #banner {
@@ -101,9 +100,9 @@ header {
 }
 .banner h2 {
    position: absolute;
-   top: 10%;
-   left: 50%;
-   font-size: 3em;
+   top: 5%;
+   left: 45%;
+   font-size: 2em;
    color: red;
    text-shadow: 1.5px 1.5px 0 white;
 }
@@ -115,17 +114,59 @@ header {
    
 }
 .weekday img{
-   width: 50px;
+   width: 40px;
 }
 .weekday {
-   outline:3px solid #214366;
-   margin: 7px;
+   outline:2px solid #214366;
+   margin: 5px;
 }
 .forecast{
    text-align: center;
 }
 
-@media screen and (min-width:679px){
+@media screen and (min-width:738px){
+   .navigation li{
+       display: inline;
+       padding: 12px;    
+       background-color: red;
+       border-radius: 5px 5px 5px 5px;
+       margin-right: 0px;
+       
+   }
+   .navigation li:first-child{
+      display: none;
+   }
+   .navigation {
+      text-align: left;
+   }
+   header {
+      grid-template-columns: 220px 1fr;
+      grid-template-rows: 120px 1fr;
+   }
+   .logo img {
+      width: 190px;
+      margin-left: 7px;
+      margin-top: 7px;
+   }
+   .rightup h3 {
+      margin-left: 20px;
+      font-size: 1.1em;
+   }
+   .banner h2 {
+      top: 5%;
+      left: 50%;
+      font-size: 2.5em;  
+   }
+   .weekday img{
+      width: 45px;
+   }
+   .weekday {
+      outline:3px solid #214366;
+      margin: 7px;
+   }
+}
+
+@media screen and (min-width:1070px){
    .navigation li{
        display: inline;
        padding: 12px;    
@@ -134,5 +175,60 @@ header {
        
    }
    
-}
+   header {
+      display: grid;
+      grid-template-columns: 320px 1fr;
+      grid-template-rows: 1fr 60px;
+   }
+   .left {
+      grid-column: 1;
+      grid-row: 1/3;
+      background-color: #397CB3;
+      position: relative;
+      z-index: 9;
+   }
+   .left::before {
+      content: "";
+      position: absolute;
+      z-index: -1;
+      top: 0;
+      right: 0;
+      bottom: 60px;
+      left: 0;
+      background-color: #214366;
+   }
+   .rightup {
+      grid-column: 2/3;
+      grid-row: 1/2;
+      background-color: #214366;
+      padding: 8px 0px;
+      color: white;
+      height: 100px;
+      text-shadow: 1.5px 1.5px 0 black;
+      line-height: 1em;
+   }
+   .rightup h3 {
+      margin-left: 20px;
+   }
+   
+   .rightdown {
+      grid-column: 2/3;
+      grid-row: 2/3;
+      background-color: #397CB3;
+   }
+   .logo img{
+     margin-left: 8px;
+     margin-top: 6px;
+     width: 300px;
+   }
 
+   .banner h2 {
+      top: 5%;
+      left: 60%;
+      font-size: 3em;  
+   }
+   .weekday img{
+      width: 50px;
+   }
+   
+}
