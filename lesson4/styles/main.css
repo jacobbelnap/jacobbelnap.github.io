@@ -31,9 +31,6 @@ header a{
    display: block;
 }
 
-/* *******from pen********* */
-
-
 .bottom {
    background-color: #214366;
 }
@@ -120,10 +117,23 @@ header {
    outline:2px solid #214366;
    margin: 5px;
 }
+.article {
+   margin-bottom: 30px;
+}
+.mapSection {
+   grid-gap: 60px;
+   margin: 10px;
+   margin-top: 40px;
+}
+.map img {
+   width: 100%;
+}
 .forecast{
    text-align: center;
 }
 
+
+/*Medium View*/
 @media screen and (min-width:738px){
    .navigation li{
        display: inline;
@@ -167,8 +177,16 @@ header {
    main {
       margin: 50px;
    }
+   .mapSection {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+   }
+   
 }
 
+
+
+/*Large View*/
 @media screen and (min-width:1070px){
    .navigation li{
        display: inline;
