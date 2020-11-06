@@ -3,93 +3,50 @@ body {
    margin: 0 auto;
    font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
 }
-
-.navigation li:first-child {
-   display: block;
-   font-size: 20px;
-   background-color: #397CB3;
-   float: none;
-   height: auto;
-   padding: 4px;
-   margin-top: -12px;
-}
-
 .navigation {
-   text-align: center;
+   list-style: none;
 }
 
-
-.navigation li:not(:first-child){
+.navigation li{
+   list-style-type: none;
+   font-size: 20px;
    display: none;
+   text-align: center;
+   line-height: 1.5em;
+   margin-right: 20px;
 }
-.responsive li:not(:first-child) {
-   background-color: aqua;
-   display: block;
-}
-.banner h2 {
-   font-size: 2em;
-   top: 10%;
-   left: 45%;
-}
-header h3{
-   font-size: .85em;
-}
-
-header {
-   grid-template-columns: 220px 1fr;
-   grid-template-rows: 113px 40px;
-}
-.left {
-   background-color: #214366;
-   grid-row: 1/2;
-}
-.logo img{
-   width: 190px;
-   padding-left: 6px;
-   margin-top: 4px;
-}
-.rightup {
-   background-color: #214366;
-   grid-row: 1/2;
-   padding-left: 10px;
-   height: 100%;
-}
-.rightup h3 {
-   margin-left: 5px;
-   line-height: 1.1em;
-}
-.rightdown {
-   background-color: #397CB3;
-   grid-column: 1/3;
-}
-
-
-
-
-
-
 
 header a{
-   color: white;
    text-decoration: none;
+   color: white;
    font-size: 1.1em;
 }
+.navigation li:first-child{
+   display: block;
+}
+.navigation li:hover {
+   opacity: .5;
+}
+.responsive li{
+   display: block;
+}
+.banner1 {
+   text-align: center;
+   padding: 20px;
+   background-image: url("/images/american.jpeg");
+   color: white;
+   font-size: 1.2em;
+   text-shadow: 1.5px 1.5px 0 red;
+}
+
 .bottom {
    background-color: #214366;
 }
-
 main {
-   margin: 50px;
-}
-.meat {
-   padding: 10px;
+   margin: 40px;
 }
 .main-wrapper {
-   background-color: #214366;
-    padding:20px;
-    margin-top: 20px;
-    text-align: center;
-    color: white;
+    text-align: center; 
 }
 footer {
    text-decoration: none;
@@ -104,7 +61,40 @@ footer a {
    color: #214366;
 }
 
+header {
+   display: grid;
+   grid-template-columns: 166px 1fr;
+   grid-template-rows: 90px 1fr;
+}
+.left {
+   grid-column: 1/2;
+   grid-row: 1/2;
+   background-color: #214366;
+}
 
+.rightup {
+   grid-column: 2/3;
+   grid-row: 1/2;
+   background-color: #214366; 
+   color: white;
+   text-shadow: 1.5px 1.5px 0 black;
+   line-height: 1em;
+}
+.rightup h3 {
+   margin-left: 20px;
+   font-size: 14px;
+}
+
+.rightdown {
+   grid-column: 1/3;
+   grid-row: 2/3;
+   background-color: #397CB3;
+}
+.logo img{
+  margin-left: 8px;
+  margin-top: 3.5px;
+  width: 150px;
+}
 
 #banner {
    max-width: 100%;
@@ -112,17 +102,28 @@ footer a {
 .banner{
    position: relative;
 }
-.banner h2 {
-   position: absolute;
-   top: 10%;
-   left: 50%;
-   font-size: 3em;
+.stats h2{
    color: red;
    text-shadow: 1.5px 1.5px 0 white;
-   padding-right: 5px;
+   font-size: 1em;
 }
-
-
+.stats {
+   position: absolute;
+   top: -5%;
+   right: 4%;
+   line-height: .3em;
+   color: white;
+   background: radial-gradient(#eee, #397CB3);
+	border: 1px solid #214366;
+	padding: .6rem;
+	box-shadow: 0 0 30px #111;
+	opacity: .75;
+}
+.stats span{
+   color: #214366;
+   font-size: 1.1em;
+   font-weight: 700;
+}
 
 .week {
    display: grid;
@@ -131,52 +132,102 @@ footer a {
    
 }
 .weekday img{
-   width: 50px;
+   width: 40px;
 }
 .weekday {
-   outline:3px solid #214366;
-   margin: 7px;
+   outline:2px solid #214366;
+   margin: 5px;
+}
+.article {
+   margin-bottom: 30px;
+}
+.mapSection {
+   grid-gap: 60px;
+   margin: 10px;
+   margin-top: 40px;
+}
+.map img {
+   width: 100%;
 }
 .forecast{
    text-align: center;
 }
+.num{
+   font-size: 1.8em;
+}
 
-header {
-   display: grid;
-   grid-template-columns: 320px 1fr;
-   grid-template-rows: 1fr 60px;
+/*Medium View*/
+@media screen and (min-width:738px){
+   .navigation li{
+       display: inline;
+       padding: 12px;    
+       background-color: red;
+       border-radius: 5px 5px 5px 5px;
+       margin-right: 0px;
+       
+   }
+   .navigation li:first-child{
+      display: none;
+   }
+   .navigation {
+      text-align: left;
+   }
+   header {
+      grid-template-columns: 220px 1fr;
+      grid-template-rows: 120px 1fr;
+   }
+   .logo img {
+      width: 190px;
+      margin-left: 7px;
+      margin-top: 7px;
+   }
+   .rightup h3 {
+      margin-left: 20px;
+      font-size: 1.1em;
+   }
+   .stats h2{
+      font-size: 1.2em; 
+   }
+   .stats{
+      top: 10%;
+      right: 10%;
+      font-size: 1.1em;
+      padding: 1.5rem;
+   }
+   .weekday img{
+      width: 45px;
+   }
+   .weekday {
+      outline:3px solid #214366;
+      margin: 7px;
+   }
+   main {
+      margin: 50px;
+   }
+   .mapSection {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+   }
+   .banner1 {
+      padding: 20px; 
+      font-size: 1.4em;
+   }
+
+  
 }
 
 
 
-
-
-/*
-Medium; VIEW
-*/
-
-
-@media screen and (min-width:688px){
-   .navigation li:first-child {
-      display: inline;
-      float: right;
-      margin-right: 50px;
-      margin-top: -11px;
-      font-size: 20px;
-      padding: 12px;    
-      background-color: red;
-      border-radius: 5px 5px 5px 5px;
-   }
+/*Large View*/
+@media screen and (min-width:1070px){
    .navigation li{
-      font-size: 20px;
+       display: inline;
+       padding: 12px;    
+       background-color: red;
+       border-radius: 5px 5px 5px 5px;
+       
    }
-   .navigation li:not(:first-child){
-      display: none;
-   }
-   .responsive li:not(:first-child) {
-      display: block;
-      background-color: aqua;
-   }
+   
    header {
       display: grid;
       grid-template-columns: 320px 1fr;
@@ -223,36 +274,18 @@ Medium; VIEW
      margin-top: 6px;
      width: 300px;
    }
-   
-}
 
-
-
-
-/*
-LARGE VIEW
-*/
-
-
-
-
-@media screen and (min-width:1050px){
-   .navigation li{
-       display: inline;
-       background-color: red;
-       padding: 12px;    
-       border-radius: 5px 5px 5px 5px;
+   .stats h2{
+      font-size: 1.4em; 
    }
-   .navigation {
-      display: inline;
+   .stats{
+      font-size: 1.3em;
    }
-   .navigation li:first-child {
-      display: none;
-      
+   .forecast {
+      margin: 100px;
    }
-   .responsive li:not(:first-child) {
-      display: inline;
-      background-color: red;
-  }
+   .weekday img{
+      width: 50px;
+   }
    
 }
