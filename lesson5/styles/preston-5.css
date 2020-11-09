@@ -1,0 +1,294 @@
+body {
+   background-color: lightgray;
+   margin: 0 auto;
+   font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+}
+.navigation {
+   list-style: none;
+}
+
+.navigation li{
+   list-style-type: none;
+   font-size: 20px;
+   display: none;
+   text-align: center;
+   line-height: 1.5em;
+   margin-right: 20px;
+}
+
+header a{
+   text-decoration: none;
+   color: white;
+   font-size: 1.1em;
+}
+.navigation li:first-child{
+   display: block;
+}
+.navigation li:hover {
+   opacity: .5;
+}
+.responsive li{
+   display: block;
+}
+.banner1 {
+   text-align: center;
+   padding: 20px;
+   background-image: url("/images/american.jpeg");
+   color: white;
+   font-size: 1.2em;
+   text-shadow: 1.5px 1.5px 0 red;
+}
+
+.bottom {
+   background-color: #214366;
+}
+main {
+   margin: 40px;
+}
+.main-wrapper {
+    text-align: center; 
+}
+footer {
+   text-decoration: none;
+   padding-bottom: 5px;
+   color: #214366;
+   margin: 50px;
+   text-align: center;
+   font-size: 1em;
+}
+footer a {
+   font-size: 1em;
+   color: #214366;
+}
+
+header {
+   display: grid;
+   grid-template-columns: 166px 1fr;
+   grid-template-rows: 90px 1fr;
+}
+.left {
+   grid-column: 1/2;
+   grid-row: 1/2;
+   background-color: #214366;
+}
+
+.rightup {
+   grid-column: 2/3;
+   grid-row: 1/2;
+   background-color: #214366; 
+   color: white;
+   text-shadow: 1.5px 1.5px 0 black;
+   line-height: 1em;
+}
+.rightup h3 {
+   margin-left: 20px;
+   font-size: 14px;
+}
+
+.rightdown {
+   grid-column: 1/3;
+   grid-row: 2/3;
+   background-color: #397CB3;
+}
+.logo img{
+  margin-left: 8px;
+  margin-top: 3.5px;
+  width: 150px;
+}
+
+#banner {
+   max-width: 100%;
+}
+.banner{
+   position: relative;
+}
+.stats h2{
+   color: red;
+   text-shadow: 1.5px 1.5px 0 white;
+   font-size: 1em;
+}
+.stats {
+   position: absolute;
+   top: -5%;
+   right: 4%;
+   line-height: .3em;
+   color: white;
+   background: radial-gradient(#eee, #397CB3);
+	border: 1px solid #214366;
+	padding: .6rem;
+	box-shadow: 0 0 30px #111;
+	opacity: .75;
+}
+.stats span{
+   color: #214366;
+   font-size: 1.1em;
+   font-weight: 700;
+}
+
+.week {
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+   text-align: center;
+   
+}
+.weekday img{
+   width: 40px;
+}
+.weekday {
+   outline:2px solid #214366;
+   margin: 5px;
+}
+.article {
+   margin-bottom: 30px;
+}
+.mapSection {
+   grid-gap: 60px;
+   margin: 10px;
+   margin-top: 40px;
+}
+.map img {
+   width: 100%;
+}
+.forecast{
+   text-align: center;
+}
+.num{
+   font-size: 1.8em;
+}
+#curPage {
+   background-color: #214366;
+}
+
+/*Medium View*/
+@media screen and (min-width:738px){
+   .navigation li{
+       display: inline;
+       padding: 12px;    
+       background-color: red;
+       border-radius: 5px 5px 5px 5px;
+       margin-right: 0px;
+       
+   }
+   .navigation li:first-child{
+      display: none;
+   }
+   .navigation {
+      text-align: left;
+   }
+   header {
+      grid-template-columns: 220px 1fr;
+      grid-template-rows: 120px 1fr;
+   }
+   .logo img {
+      width: 190px;
+      margin-left: 7px;
+      margin-top: 7px;
+   }
+   .rightup h3 {
+      margin-left: 20px;
+      font-size: 1.1em;
+   }
+   .stats h2{
+      font-size: 1.2em; 
+   }
+   .stats{
+      top: 10%;
+      right: 10%;
+      font-size: 1.1em;
+      padding: 1.5rem;
+   }
+   .weekday img{
+      width: 45px;
+   }
+   .weekday {
+      outline:3px solid #214366;
+      margin: 7px;
+   }
+   main {
+      margin: 50px;
+   }
+   .mapSection {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+   }
+   .banner1 {
+      padding: 20px; 
+      font-size: 1.4em;
+   }
+
+  
+}
+
+
+
+/*Large View*/
+@media screen and (min-width:1070px){
+   .navigation li{
+       display: inline;
+       padding: 12px;    
+       background-color: red;
+       border-radius: 5px 5px 5px 5px;
+       
+   }
+   
+   header {
+      display: grid;
+      grid-template-columns: 320px 1fr;
+      grid-template-rows: 1fr 60px;
+   }
+   .left {
+      grid-column: 1;
+      grid-row: 1/3;
+      background-color: #397CB3;
+      position: relative;
+      z-index: 9;
+   }
+   .left::before {
+      content: "";
+      position: absolute;
+      z-index: -1;
+      top: 0;
+      right: 0;
+      bottom: 60px;
+      left: 0;
+      background-color: #214366;
+   }
+   .rightup {
+      grid-column: 2/3;
+      grid-row: 1/2;
+      background-color: #214366;
+      padding: 8px 0px;
+      color: white;
+      height: 100px;
+      text-shadow: 1.5px 1.5px 0 black;
+      line-height: 1em;
+   }
+   .rightup h3 {
+      margin-left: 20px;
+   }
+   
+   .rightdown {
+      grid-column: 2/3;
+      grid-row: 2/3;
+      background-color: #397CB3;
+   }
+   .logo img{
+     margin-left: 8px;
+     margin-top: 6px;
+     width: 300px;
+   }
+
+   .stats h2{
+      font-size: 1.4em; 
+   }
+   .stats{
+      font-size: 1.3em;
+   }
+   .forecast {
+      margin: 100px;
+   }
+   .weekday img{
+      width: 50px;
+   }
+   
+}
