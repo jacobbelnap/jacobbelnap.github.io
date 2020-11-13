@@ -1,0 +1,40 @@
+body {
+   background-color: lightgray;
+   margin: 0 auto;
+   font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+}
+.cards{
+   display: grid;
+   grid-template-columns: 1fr;
+   grid-gap: 10px;
+   text-align: center;
+}
+header h1{
+   text-align: center;
+}
+footer{
+   text-align: center;
+   padding-top: 25px;
+   
+}
+
+
+/*Medium View*/
+@media screen and (min-width:738px){
+   .cards{
+      grid-template-columns: 1fr 1fr;
+   }
+  
+}
+
+
+/*Large View*/
+@media screen and (min-width:1070px){
+   .cards{
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+   }
+ img {
+    width: 75%;
+    
+ }
+}

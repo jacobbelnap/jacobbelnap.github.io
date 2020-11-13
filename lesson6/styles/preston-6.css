@@ -43,9 +43,7 @@ header a{
    background-color: #214366;
 }
 main {
-   max-width: 600px;
-   margin: 0 auto;
-   text-align: center;
+   margin: 40px;
 }
 .main-wrapper {
     text-align: center; 
@@ -98,26 +96,69 @@ header {
   width: 150px;
 }
 
+#banner {
+   max-width: 100%;
+}
+.banner{
+   position: relative;
+}
+.stats h2{
+   color: red;
+   text-shadow: 1.5px 1.5px 0 white;
+   font-size: 1em;
+}
+.stats {
+   position: absolute;
+   top: -5%;
+   right: 4%;
+   line-height: .3em;
+   color: white;
+   background: radial-gradient(#eee, #397CB3);
+	border: 1px solid #214366;
+	padding: .6rem;
+	box-shadow: 0 0 30px #111;
+   opacity: .75;
+}
+.stats span{
+   color: #214366;
+   font-size: 1.1em;
+   font-weight: 700;
+}
+
+
+.week {
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+   text-align: center;
+   
+}
+.weekday img{
+   width: 40px;
+}
+.weekday {
+   outline:2px solid #214366;
+   margin: 5px;
+}
+.article {
+   margin-bottom: 30px;
+}
+.mapSection {
+   grid-gap: 60px;
+   margin: 10px;
+   margin-top: 40px;
+}
+.map img {
+   width: 100%;
+}
+.forecast{
+   text-align: center;
+}
+.num{
+   font-size: 1.8em;
+}
 #curPage {
    background-color: #214366;
 }
-.galleryPage img{
-   box-shadow: 3px 3px 10px black;
-}
-.gallery:hover {
-   transform: scale(1.02);
-   cursor: pointer;
-}
-.modal-content {
-   margin: auto;
-   display: block;
-   width: 80%;
-   max-width: 700px;
- }
- .hide {
-    display: none;
- }
-
 
 /*Medium View*/
 @media screen and (min-width:738px){
@@ -148,11 +189,35 @@ header {
       margin-left: 20px;
       font-size: 1.1em;
    }
+   .stats h2{
+      font-size: 1.2em; 
+   }
+   .stats{
+      top: 10%;
+      right: 10%;
+      font-size: 1.1em;
+      padding: 1.5rem;
+   }
+   .weekday img{
+      width: 45px;
+   }
+   .weekday {
+      outline:3px solid #214366;
+      margin: 7px;
+   }
+   main {
+      margin: 50px;
+   }
+   .mapSection {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+   }
    .banner1 {
       padding: 20px; 
       font-size: 1.4em;
    }
-   
+
+  
 }
 
 
@@ -213,38 +278,18 @@ header {
      margin-top: 6px;
      width: 300px;
    }
-   
-   .galleryPage {
-      grid-template-rows: 173px 128px  173px 163px;
-   }
-   
-   .row1{
-      display: grid;
-      grid-template-columns: 308.16px 260.16px;
-      grid-gap: 10px;
-      padding-top: 10px;
-   }
-   .row2{
-      display: grid;
-      grid-template-columns: 192px 192px 183px;
-      grid-gap: 5px;
-      padding-top: 2px;
-   }
-   .row3{
-      display: grid;
-      grid-template-columns: 260.16px 306.24px;
-      grid-gap: 10px;
-      padding-top: 2px;
-   }
-   .row4{
-      display: grid;
-      grid-template-columns: 216.96px 354.24px;
-      grid-gap: 10px;
-      padding-top: 2px;
-   }
 
-  
-         
-  
-      
+   .stats h2{
+      font-size: 1.4em; 
+   }
+   .stats{
+      font-size: 1.3em;
+   }
+   .forecast {
+      margin: 100px;
+   }
+   .weekday img{
+      width: 50px;
+   }
+   
 }

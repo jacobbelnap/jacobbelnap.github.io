@@ -1,0 +1,127 @@
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <meta name="description" content="Assigment portal page for Jacob Belnap in WDD 230 - Web Front-end Development at Brigham Young University - Idaho">
+   <title>Mr. Snowday</title>
+   <link rel="shortcut icon" href="/images/favicon.ico">
+   <link rel="stylesheet" href="styles/preston-6.css">
+   <link rel="stylesheet" href="styles/normalize.css">
+   <link href="https://fonts.googleapis.com/css?family=Mukta&display=swap" rel="stylesheet">
+</head>
+<body>
+   <div id="pancake" class="banner1"><b>Preston Pancakes in the Park! 9:00a.m. Saturday at the city park pavilion.</b></div>
+<header>  
+   <div class="left">
+      <span class="logo"><img src="/images/Picture1.png" alt="logo"></span>
+   </div>
+
+   <div class="rightup">
+      <h1>Mr. Snowday</h1>
+      <h3>"The Snowman that Actually Talks"</h3>
+   </div>
+  
+   <div class="rightdown">
+      <ul class="navigation">
+            <li class="ham"><a href="#">&#9776</a></li>
+            <li><a href="/index.html">Home</a></li>
+            <li id="curPage"><a href="preston-6.html">Preston</a></li>
+            <li><a href="#">Soda Springs</a></li>
+            <li><a href="#">Fish Haven</a></li>
+            <li><a href="#">Storm Center</a></li>
+            <li><a href="/gallery.html">Gallery</a></li>
+      </ul>
+   </div>
+</header>
+<main>
+   <div class="banner">
+      <img id="banner" src="/images/banner1.png" alt="bannerPreston">
+      <section class="stats"> 
+         <h2>Weather Summary:</h2>
+         <p>Currently: <span id="curTemp" class="num">42℉</span></p>
+         <p>High: <span id="highTemp" class="num">48℉</span></p>
+         <p>Wind Chill: <span id="windChill" class="num">34℉o</span></p>
+         <p>Humidity: <span id="humidity" class="num">40%</span></p>
+         <p>Wind Speed: <span id="windSpeed" class="num">5mph</span></p>
+        </section>
+   </div>
+   <div class="forecast">
+      <h2>Five Day Forecast</h2>
+      <div class="week">
+         <div class="weekday">
+            <h3>Day</h3>
+            <img src="/images/sunny.png" alt="sunny">
+            <p>48℉</p>
+         </div>
+         <div class="weekday">
+            <h3>Day</h3>
+            <img src="/images/cloudy.png" alt="cloudy">
+            <p>45℉</p>
+         </div>
+         <div class="weekday">
+            <h3>Day</h3>
+            <img src="/images/cloudy.png" alt="cloudy">
+            <p>42℉</p>
+         </div>
+         <div class="weekday">
+            <h3>Day</h3>
+            <img src="/images/rainy.png" alt="rainy">
+            <p>38℉</p>
+         </div>
+         <div class="weekday">
+            <h3>Day</h3>
+            <img src="/images/snowy.png" alt="snowy">
+            <p>29℉</p>
+         </div>
+      </div>
+   </div>
+   <div class="article">
+      <div>
+         <h2>Article Title</h2>
+         <p>
+            In the cafeteria, Plankton attempts to eat his food, but a purple cellmate grabs some of his beans 
+            and eats them. Another green cellmate drinks Plankton's milk and then Plankton gets eaten by a light 
+            blue cellmate. Plankton yells out that he is the evilest genius and yells out his name. The purple 
+            cellmate, thinking the light blue cellmate is talking, does not believe him, saying he and the others 
+            are fans of Plankton. Plankton calls out his name again and then the purple cellmate punches the light 
+            blue cellmate in the stomach, which causes Plankton to be punched out and crash into the wall. The 
+            purple and green cellmates start to beat up the light blue cellmate until Plankton breaks it up. 
+            Plankton introduces himself to the cellmates and they say how they are going to do everything that 
+            Plankton says. Plankton gets excited saying how easily he could get the Krabby Patty secret formula. 
+         </p>
+      </div>
+      <div class="articleRight">
+         <img id="plank" src="/images/plankton.jpg" alt="plankton">
+      </div>
+   </div>
+   <hr>
+   <div class="mapSection">
+      <div class="map">
+         <img src="/images/trisha.png" alt="Trisha's House">
+      </div>
+      <div class="contact">
+         <p>Name: Mr. Snowman</p>
+         <p>Number: 208-932-5005</p>
+         <p>Email: hello@mrsnowday.com</p>
+      </div>
+   </div>
+</main>
+<footer>
+    <p>
+       &copy; <span id="curYear"></span>
+       &vert; Jacob C Belnap
+       &vert; Idaho 
+       &vert;
+       <a href="http://www.byui.edu" target="_blank">BYU-Idaho Online Learning</a>
+    </p>
+    <p>  
+       <span id="curDate"></span>
+    </p>
+ </footer>
+ <script src="scripts/curDate.js"></script>
+ <script src="scripts/toggle.js"></script>
+ <script src="scripts/pancake.js"></script>
+ <script src="scripts/windchill.js"></script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+img {
+   width: 100px;
+   padding-left: 30px;
+}
+header {
+   display:grid;
+   grid-template-columns: 300px 1fr;
+   background-color: #007481;
+}
+h2{
+   color: #dd5713;
+   font-size: 2.5em;
+   text-align: left;
+}
+main{
+   text-align: center;
+}
+
+#firstRow{
+   font-size: 1.2em;
+}
+
+th{
+   border: black solid;
+}
+td{
+   border: #dd5713 solid;
+}
+.volley{
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+}
+.vol{
+   width: 80%;
+}
+tr{
+   font-size: 1.5em;
+}
