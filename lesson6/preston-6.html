@@ -8,7 +8,6 @@
    <link rel="shortcut icon" href="/images/favicon.ico">
    <link rel="stylesheet" href="styles/preston-6.css">
    <link rel="stylesheet" href="styles/normalize.css">
-   <link href="https://fonts.googleapis.com/css?family=Mukta&display=swap" rel="stylesheet">
 </head>
 <body>
    <div id="pancake" class="banner1"><b>Preston Pancakes in the Park! 9:00a.m. Saturday at the city park pavilion.</b></div>
@@ -35,15 +34,19 @@
    </div>
 </header>
 <main>
-   <div class="banner">
-      <img id="banner" src="/images/banner1.png" alt="bannerPreston">
+   <div class="hero">
+      <picture>
+         <source id="hero" srcset="/images/heroMedium.jpg" media="(min-width:738px) and (max-width:1070px)">
+            <source  id="hero" srcset="/images/heroLarge.jpg" media="(min-width:1070px)">
+         <img  id="hero" src="/images/heroSmall.jpg" alt="Beautiful Preston Idaho Mountain Range">
+      </picture>
       <section class="stats"> 
          <h2>Weather Summary:</h2>
-         <p>Currently: <span id="curTemp" class="num">42℉</span></p>
-         <p>High: <span id="highTemp" class="num">48℉</span></p>
-         <p>Wind Chill: <span id="windChill" class="num">34℉o</span></p>
+         <p>Currently: <span id="curTemp" class="num">-9</span></p>
+         <p>High: <span id="highTemp" class="num">48</span></p>
+         <p>Wind Chill: <span id="windChill" class="num"></span></p>
          <p>Humidity: <span id="humidity" class="num">40%</span></p>
-         <p>Wind Speed: <span id="windSpeed" class="num">5mph</span></p>
+         <p>Wind Speed: <span id="windSpeed" class="num">5</span></p>
         </section>
    </div>
    <div class="forecast">
@@ -123,5 +126,7 @@
  <script src="scripts/toggle.js"></script>
  <script src="scripts/pancake.js"></script>
  <script src="scripts/windchill.js"></script>
+ <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+ <script>WebFont.load({google: {families: ['Mukta']}});</script>
 </body>
 </html>

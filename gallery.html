@@ -29,7 +29,7 @@
       <ul class="navigation">
             <li class="ham"><a href="#">&#9776</a></li>
             <li><a href="/index.html">Home</a></li>
-            <li><a href="/lesson5/preston-5.html">Preston</a></li>
+            <li><a href="/lesson6/preston-6.html">Preston</a></li>
             <li><a href="index.html">Soda Springs</a></li>
             <li><a href="index.html">Fish Haven</a></li>
             <li><a href="index.html">Storm Center</a></li>
@@ -41,64 +41,51 @@
    <h2>The Gallery Page</h2>
    <div class="galleryPage">
       <div class="row1">
-         <div class="gallery img9">
+         <div loading="lazy" class="gallery img9">
             <img class="responsive" data-src="/images/idaho9.jpg" src="/images/idaho9.jpg" alt="Lightning Storm">
-            <p class="hide">Tester Nuggets</p>
          </div>
-         <div class="gallery img5">
+         <div loading="lazy" class="gallery img5">
             <img class="responsive" data-src="/images/idaho5.jpg" src="/images/idaho5.jpg" alt="Lake in Nature">
-            <p class="hide">Tester Nuggets</p>
          </div>
       </div> 
       
       <div class="row2">
-         <div class="gallery img7">
+         <div loading="lazy" class="gallery img7">
             <img class="responsive" data-src="/images/idaho7.jpg" src="/images/idaho7.jpg" alt="Winter Town">
-            <p class="hide">Tester Nuggets</p>
          </div>
-         <div class="gallery img1">
-               <img class="responsive" data-src="/images/idaho1.jpg" src="/images/idaho1.jpg" alt="Idaho Country">
-               <p class="hide">Tester Nuggets</p>
+         <div loading="lazy" class="gallery img1">
+               <img class="responsive" data-src="/images/idaho1.jpg" src="/images/idaho1.jpg" alt="Idaho Country">     
          </div>
-         <div class="gallery img6">
+         <div loading="lazy" class="gallery img6">
             <img class="responsive" data-src="/images/idaho6.jpg" src="/images/idaho6.jpg" alt="Snowy City Center">
-            <p class="hide">Tester Nuggets</p>
          </div>
       </div>   
 
       <div class="row3">
-         <div class="gallery img8">
-            <img class="responsive" data-src="/images/idaho8.jpg" src="/images/idaho8.jpg" alt="Snowy Forest">
-            <p class="hide">Tester Nuggets</p>
+         <div loading="lazy" class="gallery img8">
+            <img class="responsive" data-src="/images/idaho8.jpg" src="/images/idaho8.jpg" alt="Fields of Gold">
          </div>
-         <div class="gallery img3">
-            <img class="responsive" data-src="/images/idaho3.jpg" src="/images/idaho3.jpg" alt="Idaho Desert">
-            <p class="hide">Tester Nuggets</p>
+         <div loading="lazy" class="gallery img3">
+            <img class="responsive" data-src="/images/idaho3.jpg" src="/images/idaho3.jpg" alt="Snowy Road">
          </div>
       </div>
 
       <div class="row4">
-         <div class="gallery img2">
-            <img class="responsive" data-src="/images/idaho2.jpg" src="/images/idaho2.jpg" alt="Picture 2">
-            <p class="hide">Tester Nuggets</p>
+         <div loading="lazy" class="gallery img2">
+            <img class="responsive" data-src="/images/idaho2.jpg" src="/images/idaho2.jpg" alt="Snowy Forest">
          </div>
-         <div class="gallery img4">
-            <img class="responsive" data-src="/images/idaho4.jpg" src="/images/idaho4.jpg" alt="Picture 4">
-            <p class="hide">Tester Nuggets</p>
+         <div loading="lazy" class="gallery img4">
+            <img class="responsive" data-src="/images/idaho4.jpg" src="/images/idaho4.jpg" alt="Idaho Desert">
          </div>
       </div>
    </div>
-   <div id="myModal" class="modal" style="display: block;">
-
+   <div id="myModal" class="modal">
       <!-- The Close Button -->
       <span class="close">×</span>
-    
       <!-- Modal Content (The Image) -->
-      <img class="modal-content" id="img01" src="https://jacobbelnap.github.io/images/idaho9.jpg">
-      
-    
+      <img class="modal-content" id="img01">
       <!-- Modal Caption (Image Text) -->
-      <div id="hide">Large Tornado</div>
+      <div id="captions"></div>
     </div>
 </main>
 <footer>
@@ -116,7 +103,7 @@
    <script src="scripts/curDate.js"></script>
    <script src="scripts/toggle.js"></script>
    <script src="scripts/pancake.js"></script>
-   <script src="scripts/gallery.js"></script>
+   <script src="/lesson6/scripts/gallery.js"></script>
    <script src="scripts/lazyload.js"></script>
 </body>
 </html>       
