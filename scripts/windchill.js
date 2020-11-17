@@ -11,3 +11,7 @@ function windChill(){
    }
 }
 window.onload=windChill;
+
+function adjustRating(rating) {
+   document.getElementById("ratingvalue").innerHTML = rating;
+}

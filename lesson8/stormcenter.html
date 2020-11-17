@@ -1,0 +1,116 @@
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <meta name="description" content="Assigment portal page for Jacob Belnap in WDD 230 - Web Front-end Development at Brigham Young University - Idaho">
+   <title>Mr. Snowday</title>
+   <link rel="shortcut icon" href="/images/favicon.ico">
+   <link rel="stylesheet" href="styles/preston-8.css">
+   <link rel="stylesheet" href="styles/form.css">
+   <link rel="stylesheet" href="/styles/normalize.css">
+</head>
+<body>
+   <div id="pancake" class="banner1"><b>Preston Pancakes in the Park! 9:00a.m. Saturday at the city park pavilion.</b></div>
+<header>  
+   <div class="left">
+      <span class="logo"><img src="/images/Picture1.png" alt="logo"></span>
+   </div>
+
+   <div class="rightup">
+      <h1>Mr. Snowday</h1>
+      <h3>"The Snowman that Actually Talks"</h3>
+   </div>
+  
+   <div class="rightdown">
+      <ul class="navigation">
+            <li class="ham"><a href="#">&#9776</a></li>
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="preston-8.html">Preston</a></li>
+            <li><a href="#">Soda Springs</a></li>
+            <li><a href="#">Fish Haven</a></li>
+            <li id="curPage"><a href="#">Storm Center</a></li>
+            <li><a href="/gallery.html">Gallery</a></li>
+      </ul>
+   </div>
+</header>
+<main>
+   <form method="GET" action="thanks.html">
+      <fieldset>
+          <legend>Contact Information</legend>
+          <label class="top">Full Name* <input type="text" name="fname" required=""></label>
+          <label class="top">Phone* <input type="tel" name="phone" placeholder="208-802-0000" required=""></label>
+          <label class="top">Email <input type="email" name="email" placeholder="amanda.huggenkiss@mrsnowday.com"></label>
+          <label class="top">Zip Code* <input type="number" name="zip" required=""></label>
+      </fieldset>
+      <fieldset>
+          <legend>Storm Information</legend>
+          <label class="top">Storm Date <input type="date" name="stormDate"></label>
+          <label class="top">
+              Storm Type
+              <input type="text" list="sType" name="stormType">
+              <datalist id="sType">
+                  <option value="Flash Flood">
+                  </option><option value="Hail">
+                  </option><option value="Hurricane">
+                  </option><option value="Thunderstorm">
+                  </option><option value="Tornado">
+              </option></datalist>
+          </label>
+          <label class="top">Storm Severity</label>
+          <input type="range" id="rating" value="5" min="1" max="10" step="1" list="tickmarks" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
+      <span id="ratingvalue">5</span>
+        <datalist id="tickmarks">
+           <option value="0">
+           </option><option value="1">
+           </option><option value="2">
+           </option><option value="3">
+           </option><option value="4">
+           </option><option value="5">
+           </option><option value="6">
+           </option><option value="7">
+           </option><option value="8">
+           </option><option value="9">
+           </option><option value="10">
+           </option></datalist>
+          <label class="top">
+              Storm Region
+              <select name="stormRegion">
+                  <option value="">Select Region ▾</option>
+                  <option value="preston">Preston</option>
+                  <option value="sodaSpring">Soda Springs</option>
+                  <option value="fishHaven">Fish Haven</option>
+              </select>
+          </label>
+          <div>User in-danger Level</div>
+          <label class="sbs"><input type="radio" name="danger" value="yes"> Yes</label>
+          <label class="sbs"><input type="radio" name="danger" value="no"> No</label>
+          <label class="sbs"><input type="radio" name="danger" value="maybe"> Maybe</label>
+      </fieldset>
+      <fieldset>
+          <legend>Additional Information & Comments</legend>
+          <textarea name="comments" rows="10" cols="50"></textarea>
+      </fieldset>
+      <input class="submitBtn" type="submit" value="Report Storm">
+  </form>
+</main>
+<footer>
+    <p>
+       &copy; <span id="curYear"></span>
+       &vert; Jacob C Belnap
+       &vert; Idaho 
+       &vert;
+       <a href="http://www.byui.edu" target="_blank">BYU-Idaho Online Learning</a>
+    </p>
+    <p>  
+       <span id="curDate"></span>
+    </p>
+ </footer>
+ <script src="/scripts/curDate.js"></script>
+ <script src="/scripts/toggle.js"></script>
+ <script src="/scripts/pancake.js"></script>
+ <script src="/scripts/windchill.js"></script>
+ <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+ <script>WebFont.load({google: {families: ['Mukta']}});</script>
+</body>
+</html>

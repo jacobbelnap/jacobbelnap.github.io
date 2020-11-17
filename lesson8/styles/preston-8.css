@@ -161,6 +161,17 @@ header {
 #curPage {
    background-color: #214366;
 }
+.thankyou{
+   text-align: center;
+   margin-bottom: 200px;
+   background-color: #214366;
+   color: white;
+   border-radius: 15px 15px;
+   padding: 20px;
+}
+.thankyou a{
+   color: red;
+}
 
 /*Medium View*/
 @media screen and (min-width:738px){
