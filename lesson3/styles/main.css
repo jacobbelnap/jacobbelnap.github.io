@@ -4,8 +4,32 @@ body {
    font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
 }
 
+.navigation {
+   list-style: none;
+}
+
 .navigation li{
    list-style-type: none;
+   font-size: 20px;
+   display: none;
+   text-align: center;
+   line-height: 1.5em;
+   margin-right: 20px;
+}
+
+header a{
+   text-decoration: none;
+   color: white;
+   font-size: 1.1em;
+}
+.navigation li:first-child{
+   display: block;
+}
+.navigation li:hover {
+   opacity: .5;
+}
+.responsive li{
+   display: block;
 }
 header {
    background-color: #397CB3;
@@ -44,17 +68,31 @@ footer a {
    font-size: 1em;
    color: #214366;
 }
-#backlink {
-  float: left;
-  margin-left: 10px;
+#backlink{
+   margin-left: 10px;
+   text-decoration: underline;
 }
 
-@media screen and (min-width:400px){
+
+/*Medium View*/
+@media screen and (min-width:900px){
    .navigation li{
-       display: inline;
-       padding:10px;    }
-   .navigation{
-       text-align: center;
-   }
-}
+      display: inline;
+      padding: 12px;    
+      background-color: red;
+      border-radius: 5px 5px 5px 5px;
+      margin-right: 0px;
+      
+      
+  }
+  .navigation{
+     margin-left: 300px;
+  }
+  .navigation li:first-child{
+     display: none;
+  }
+  .navigation {
+     text-align: left;
+  }
 
+}
