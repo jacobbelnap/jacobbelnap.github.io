@@ -5,6 +5,7 @@ body {
 }
 .navigation {
    list-style: none;
+   width: 100%;
 }
 
 .navigation li{
@@ -35,7 +36,7 @@ header a{
    background-color: #214366;
 }
 main {
-   margin: 40px;
+   margin: auto;
 }
 .main-wrapper {
     text-align: center; 
@@ -44,7 +45,7 @@ footer {
    text-decoration: none;
    padding-bottom: 5px;
    color: #214366;
-   margin: 50px;
+   margin: auto;
    text-align: center;
    font-size: 1em;
 }
@@ -90,7 +91,7 @@ header {
 }
 
 #banner {
-   max-width: 100%;
+   width: 100%;
 }
 .banner{
    position: relative;
@@ -251,5 +252,9 @@ header {
    .weekday img{
       width: 50px;
    }
-   
+   main, footer{
+      width:80%;
+      margin: auto;
+      margin-top: 40px;
+   }
 }

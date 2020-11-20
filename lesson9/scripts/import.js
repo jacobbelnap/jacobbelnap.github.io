@@ -11,8 +11,10 @@ window.addEventListener('load', (event)=>{
          console.table(jsonObject);
          const towns = jsonObject['towns'];
          for (let i = 0; i < towns.length; i++) {
-         
+
+               let townie = document.createElement('div');
                let card = document.createElement('section');
+               let card2 = document.createElement('section');
                let name = document.createElement('h2');
                let motto = document.createElement('p');
                let yearFounded = document.createElement('p');
@@ -43,10 +45,14 @@ window.addEventListener('load', (event)=>{
 
                   //Append Image
                   photo.setAttribute('src', '/images/' + towns[i].photo);
-                  card.appendChild(photo)
+                  card2.appendChild(photo);
+
+                  //Append cards to Townie
+                  townie.appendChild(card);
+                  townie.appendChild(card2);
 
                   //Add entire card to HTML
-                  document.querySelector('div.towns').appendChild(card);
+                  document.querySelector('div.towns').appendChild(townie);
                }
            
       }

@@ -101,9 +101,7 @@ header {
 #curPage {
    background-color: #214366;
 }
-.galleryPage img{
-   box-shadow: 3px 3px 10px black;
-}
+
 .gallery:hover {
    transform: scale(1.02);
    cursor: pointer;
@@ -177,6 +175,10 @@ header {
    text-decoration: none;
    cursor: pointer;
  }
+ .gallery img{
+    width: 70%;
+    padding: 2px;
+ }
 
 
 /*Medium View*/
@@ -215,6 +217,19 @@ header {
    .modal-content {
       width: 80%;
     }
+    
+    .gallery img{
+       width: 100%;
+    }
+    .galleryPage{
+      display: grid;
+      grid-template-columns: 1fr 1fr;  
+      grid-gap: 10px;
+   }
+   .row2{
+      grid-row: 2;
+   }
+   
    
 }
 
@@ -280,6 +295,9 @@ header {
    .galleryPage {
       grid-template-rows: 173px 128px 173px 163px;
    }
+   .galleryPage img{
+      box-shadow: 3px 3px 10px black;
+   }
    
    .row1{
       display: grid;
@@ -305,7 +323,13 @@ header {
       grid-gap: 10px;
       padding-top: 2px;
    }
-
+   .gallery img{
+      width: 100%;
+      padding: 0px;
+   }
+   .galleryPage{
+      display: block; 
+   }
   
          
   
