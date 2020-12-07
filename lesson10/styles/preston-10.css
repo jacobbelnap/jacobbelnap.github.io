@@ -51,13 +51,13 @@ main {
 }
 footer {
    text-decoration: none;
-   color: white;
    text-align: center;
    font-size: 1em;
    font-family: "Mukta";
    background-color: #397CB3;
    margin: 0 auto;
    padding: 10px;
+   color: white
 }
 footer a {
    font-size: 1em;
@@ -98,46 +98,84 @@ header {
   margin-top: 3.5px;
   width: 150px;
 }
-#curPage{
-   background-color: #214366;
+
+#hero {
+   width: 100%;
 }
-.towns div{
+.hero{
+   position: relative;
+}
+.stats h2{
+   color: red;
+   text-shadow: 1.5px 1.5px 0 white;
+   font-size: 1em;
+}
+.stats {
+   position: absolute;
+   top: -5%;
+   right: 4%;
+   line-height: .3em;
+   color: white;
+   background: radial-gradient(#eee, #397CB3);
+	border: 1px solid #214366;
+	padding: .6rem;
+	box-shadow: 0 0 30px #111;
+   opacity: .75;
+}
+.stats span{
+   color: #214366;
+   font-size: 1.1em;
+   font-weight: 700;
+}
+
+
+.week {
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
    text-align: center;
    
-   box-shadow: 3px 3px 10px 3px black;
+}
+.weekday img{
+   width: 40px;
+}
+.weekday {
+   outline:2px solid #214366;
+   margin: 5px;
+}
+.article {
    margin-bottom: 30px;
 }
-
-.towns h2{
-   background-color: red;
-   font-size: 2rem;
-   color: white;
+.mapSection {
+   grid-gap: 60px;
+   margin: 10px;
+   margin-top: 40px;
 }
-.towns p{
-   color: #214366;
-   font-weight: 500;
+.map img {
+   width: 100%;
 }
-.towns img{
-   height: 100%;
-}
-#inner{
-   cursor: pointer;
-}
-#inner:hover{
-   opacity: .5;
-}
-.invite{
-   font-size: 1.5em;
+.forecast{
    text-align: center;
-   margin: 30px;
-   color: red;
-   font-weight: bolder;
 }
-
-
+.num{
+   font-size: 1.8em;
+}
+#curPage {
+   background-color: #214366;
+}
+.thankyou{
+   text-align: center;
+   margin-bottom: 200px;
+   background-color: #214366;
+   color: white;
+   border-radius: 15px 15px;
+   padding: 20px;
+}
+.thankyou a{
+   color: red;
+}
 
 /*Medium View*/
-@media screen and (min-width:768px){
+@media screen and (min-width:738px){
    .navigation li{
        display: inline;
        padding: 12px;    
@@ -165,41 +203,33 @@ header {
       margin-left: 20px;
       font-size: 1.1em;
    }
-   .towns {
+   .stats h2{
+      font-size: 1.2em; 
+   }
+   .stats{
+      top: 10%;
+      right: 10%;
+      font-size: 1.1em;
+      padding: 1.5rem;
+   }
+   .weekday img{
+      width: 45px;
+   }
+   .weekday {
+      outline:3px solid #214366;
+      margin: 7px;
+   }
+   main {
+      margin: 50px;
+   }
+   .mapSection {
       display: grid;
-      grid-template-rows: 1fr 1fr 1fr;
-      grid-gap: 40px;
+      grid-template-columns: 1fr 1fr;
    }
-   .towns div{
-      display: flex;
-      margin: .5rem auto;
-      display: flex;
-      box-shadow: 3px 3px 10px black;
-      height: 232px;
+   .banner1 {
+      padding: 20px; 
+      font-size: 1.4em;
    }
-   .towns div:nth-child(even) {
-      flex-direction: row-reverse;
-   }
-   .towns section{
-      min-width: 350px;
-   }
-   .towns h2{
-      margin-top: 0;
-      padding: 10px;
-   }
-   .towns img{
-      margin-right: 0px;
-      height: 100%;
-      width: 100%;
-   }
-   footer{
-      width: 85%;
-      background-color: #397CB3;
-      margin: 0 auto;
-      padding: 10px;
-   }
-   .invite{
-      font-size: 1.8em;
 
   
 }
@@ -207,7 +237,7 @@ header {
 
 
 /*Large View*/
-@media screen and (min-width:1170px){
+@media screen and (min-width:1070px){
    .navigation li{
        display: inline;
        padding: 12px;    
@@ -262,33 +292,18 @@ header {
      margin-top: 6px;
      width: 300px;
    }
-   .towns {
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr;
-      grid-gap: 20px;
-      height: 500px;
-      
+
+   .stats h2{
+      font-size: 1.4em; 
+   }
+   .stats{
+      font-size: 1.3em;
+   }
+   .forecast {
+      margin: 100px;
+   }
+   .weekday img{
+      width: 50px;
    }
    
-   .towns div{
-      display: block;
-      margin: .5rem auto;
-      box-shadow: 2px -2px 5px 0px black;
-      outline:  black;
-      
-   }
-   .townie{
-      width: 80%;
-   }
-   .towns section{
-      width: 300px;
-      height: 230px;
-   }
-   .towns img{
-      box-shadow: 2px 2px 5px 0px black;
-   }
-   footer{
-      width: 92%;
-   }
- 
 }

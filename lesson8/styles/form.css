@@ -12,6 +12,10 @@ footer{
    background-color: #397CB3;
    margin: 0 auto;
    padding: 10px;
+   color: white;
+}
+footer a {
+   color: white;
 }
 h2 span{
    color: black;

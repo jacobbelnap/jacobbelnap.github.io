@@ -7,9 +7,8 @@
    <meta name="description" content="Assigment portal page for Jacob Belnap in WDD 230 - Web Front-end Development at Brigham Young University - Idaho">
    <title>Mr. Snowday</title>
    <link rel="shortcut icon" href="/images/favicon.ico">
-   <link rel="stylesheet" href="styles/preston-5.css">
-   <link rel="stylesheet" href="styles/normalize.css">
-   <link href="https://fonts.googleapis.com/css?family=Mukta&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="styles/preston-10.css">
+   <link rel="stylesheet" href="/styles/normalize.css">
 </head>
 <body>
    <div id="pancake" class="banner1"><b>Preston Pancakes in the Park! 9:00a.m. Saturday at the city park pavilion.</b></div>
@@ -26,25 +25,29 @@
    <div class="rightdown">
       <ul class="navigation">
             <li class="ham"><a href="#">&#9776;</a></li>
-            <li><a href="/index.html">Home</a></li>
-            <li id="curPage"><a href="preston-5.html">Preston</a></li>
-            <li><a href="index.html">Soda Springs</a></li>
-            <li><a href="index.html">Fish Haven</a></li>
-            <li><a href="index.html">Storm Center</a></li>
-            <li><a href="/gallery.html">Gallery</a></li>
+            <li><a href="/lesson9/index.html">Home</a></li>
+            <li id="curPage"><a href="preston-10.html">Preston</a></li>
+            <li><a href="#">Soda Springs</a></li>
+            <li><a href="#">Fish Haven</a></li>
+            <li><a href="/lesson8/stormcenter.html">Storm Center</a></li>
+            <li><a href="/lesson7/gallery.html">Gallery</a></li>
       </ul>
    </div>
 </header>
 <main>
-   <div class="banner">
-      <img id="banner" src="/images/banner1.png" alt="bannerPreston">
+   <div class="hero">
+      <picture>
+         <source id="hero" srcset="/images/heroMedium.jpg" media="(min-width:738px) and (max-width:1070px)">
+            <source  id="hero" srcset="/images/heroLarge.jpg" media="(min-width:1070px)">
+         <img  id="hero" src="/images/heroSmall.jpg" alt="Beautiful Preston Idaho Mountain Range">
+      </picture>
       <section class="stats"> 
          <h2>Weather Summary:</h2>
-         <p>Currently: <span id="curTemp"><span class="num">42</span>℉</span></p>
-         <p>High: <span id="highTemp"><span class="num">48</span>℉</span></p>
-         <p>Wind Chill: <span id="windChill"><span class="num">34</span>℉</span></p>
-         <p>Humidity: <span id="humidity"><span class="num">40</span>%</span></p>
-         <p>Wind Speed: <span id="windSpeed"><span class="num">5</span>mph</span></p>
+         <p>Currently: <span id="curTemp" class="num">-9</span></p>
+         <p>High: <span id="highTemp" class="num">48</span></p>
+         <p>Wind Chill: <span id="windChill" class="num"></span></p>
+         <p>Humidity: <span id="humidity" class="num">40%</span></p>
+         <p>Wind Speed: <span id="windSpeed" class="num">5</span></p>
         </section>
    </div>
    <div class="forecast">
@@ -116,12 +119,18 @@
        &vert;
        <a href="http://www.byui.edu" target="_blank">BYU-Idaho Online Learning</a>
     </p>
+    <p>
+       The weather data is provided by <a href="https://OpenWeatherMap.org" target="_blank">OpenWeatherMap.org</a>
+    </p>
     <p>  
        <span id="curDate"></span>
     </p>
  </footer>
- <script src="scripts/curDate.js"></script>
- <script src="scripts/toggle.js"></script>
- <script src="scripts/pancake.js"></script>
+ <script src="/scripts/curDate.js"></script>
+ <script src="/scripts/toggle.js"></script>
+ <script src="/scripts/pancake.js"></script>
+ <script src="/scripts/windchill.js"></script>
+ <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+ <script>WebFont.load({google: {families: ['Mukta']}});</script>
 </body>
 </html>

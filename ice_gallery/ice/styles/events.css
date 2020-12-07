@@ -1,0 +1,48 @@
+body{
+   background-color: lightgray;
+   max-width: 500px;
+   margin: 0 auto;
+}
+header main {
+    background-color: white;
+}
+#sort {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    width: 60%;
+    font-size: 0.7em;
+}
+#sort p {
+    text-align: left;
+}
+#sort p span {
+    background-color: gray;
+    padding: 3px;
+    border-radius: 2px;
+}
+main{
+   display: grid;
+   grid-template-rows: 1fr 1fr 1fr;
+   line-height: .3em;
+}
+.event{
+   display: grid;
+   grid-template-columns: 150px 1fr;
+   outline: 1px solid grey;
+   padding: 6px;
+}
+.content{
+   display:grid;
+   grid-template-columns: 120px 1fr;
+   line-height: .1rem;
+}
+.date{
+   font-size: 1.4em;
+   padding-left: 10px;
+}
+.num{
+   color: darkblue;
+   font-weight: 800;
+   font-size: 1.5em;
+   padding-left: 18px;
+}

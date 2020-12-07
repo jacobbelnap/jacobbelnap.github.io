@@ -3,6 +3,7 @@ body {
    margin: 0 auto;
    font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
 }
+
 .navigation {
    list-style: none;
 }
@@ -43,9 +44,7 @@ header a{
    background-color: #214366;
 }
 main {
-   max-width: 600px;
-   margin: 0 auto;
-   text-align: center;
+   margin: 40px;
 }
 .main-wrapper {
     text-align: center; 
@@ -53,14 +52,16 @@ main {
 footer {
    text-decoration: none;
    padding-bottom: 5px;
-   color: #214366;
-   margin: 50px;
+   background-color: #214366;
+   color: white;
    text-align: center;
+   padding: 10px;
    font-size: 1em;
+   font-family: "Mukta";
 }
 footer a {
    font-size: 1em;
-   color: #214366;
+   color: white;
 }
 
 header {
@@ -97,92 +98,46 @@ header {
   margin-top: 3.5px;
   width: 150px;
 }
-
-#curPage {
+#curPage{
    background-color: #214366;
 }
+.towns div{
+   text-align: center;
+   
+   box-shadow: 3px 3px 10px 3px black;
+   margin-bottom: 30px;
+}
 
-.gallery:hover {
-   transform: scale(1.02);
+.towns h2{
+   background-color: red;
+   font-size: 2rem;
+   color: white;
+}
+.towns p{
+   color: #214366;
+   font-weight: 500;
+}
+.towns img{
+   height: 100%;
+}
+#inner{
    cursor: pointer;
 }
-/* The Modal (background) */
-.modal {
-   display: none; /* Hidden by default */
-   position: fixed; /* Stay in place */
-   z-index: 1; /* Sit on top */
-   padding-top: 250px; /* Location of the box */
-   left: 0;
-   top: 0;
-   width: 100%; /* Full width */
-   height: 100%; /* Full height */
-   overflow: auto; /* Enable scroll if needed */
-   background-color: rgb(0, 0, 0); /* Fallback color */
-   background-color: rgba(0, 0, 0, 0.9); /* Black w/ opacity */
- }
- 
- /* Modal Content (Image) */
- .modal-content {
-   margin: auto;
-   display: block;
-   width: 100%;
-   max-width: 700px;
- }
- 
- /* Caption of Modal Image (Image Text) - Same Width as the Image */
- #captions {
-   margin: auto;
-   display: block;
-   width: 80%;
-   max-width: 700px;
-   text-align: center;
-   color: #ccc;
-   padding: 10px 0;
-   height: 150px;
+#inner:hover{
+   opacity: .5;
+}
+.invite{
    font-size: 1.5em;
- }
- 
- /* Add Animation - Zoom in the Modal */
- .modal-content,
- #caption {
-   animation-name: zoom;
-   animation-duration: 0.6s;
- }
- 
- @keyframes zoom {
-   from {
-     transform: scale(0);
-   }
-   to {
-     transform: scale(1);
-   }
- }
- 
- /* The Close Button */
- .close {
-   position: absolute;
-   top: 15px;
-   right: 35px;
-   color: #f1f1f1;
-   font-size: 40px;
-   font-weight: bold;
-   transition: 0.3s;
- }
- 
- .close:hover,
- .close:focus {
-   color: #bbb;
-   text-decoration: none;
-   cursor: pointer;
- }
- .gallery img{
-    width: 70%;
-    padding: 2px;
- }
+   text-align: center;
+   margin: 30px;
+   color: red;
+   font-weight: bolder;
+}
+
 
 
 /*Medium View*/
-@media screen and (min-width:738px){
+@media screen and (min-width:768px){
    .navigation li{
        display: inline;
        padding: 12px;    
@@ -210,33 +165,47 @@ header {
       margin-left: 20px;
       font-size: 1.1em;
    }
-   .banner1 {
-      padding: 20px; 
-      font-size: 1.4em;
-   }
-   .modal-content {
-      width: 80%;
-    }
-    
-    .gallery img{
-       width: 100%;
-    }
-    .galleryPage{
+   .towns {
       display: grid;
-      grid-template-columns: 1fr 1fr;  
-      grid-gap: 10px;
+      grid-template-rows: 1fr 1fr 1fr;
+      grid-gap: 40px;
    }
-   .row2{
-      grid-row: 2;
+   .towns div{
+      display: flex;
+      margin: .5rem auto;
+      display: flex;
+      box-shadow: 3px 3px 10px black;
+      height: 232px;
    }
-   
-   
+   .towns div:nth-child(even) {
+      flex-direction: row-reverse;
+   }
+   .towns section{
+      min-width: 350px;
+   }
+   .towns h2{
+      margin-top: 0;
+      padding: 10px;
+   }
+   .towns img{
+      margin-right: 0px;
+      height: 100%;
+      width: 100%;
+   }
+   footer{
+      width: 85%;
+      margin: auto;
+   }
+   .invite{
+      font-size: 1.8em;
+
+  
 }
 
 
 
 /*Large View*/
-@media screen and (min-width:1070px){
+@media screen and (min-width:1170px){
    .navigation li{
        display: inline;
        padding: 12px;    
@@ -291,47 +260,33 @@ header {
      margin-top: 6px;
      width: 300px;
    }
-   
-   .galleryPage {
-      grid-template-rows: 173px 128px 173px 163px;
-   }
-   .galleryPage img{
-      box-shadow: 3px 3px 10px black;
-   }
-   
-   .row1{
+   .towns {
       display: grid;
-      grid-template-columns: 308.16px 260.16px;
-      grid-gap: 10px;
-      padding-top: 10px;
-   }
-   .row2{
-      display: grid;
-      grid-template-columns: 192px 192px 183px;
-      grid-gap: 5px;
-      padding-top: 2px;
-   }
-   .row3{
-      display: grid;
-      grid-template-columns: 260.16px 306.24px;
-      grid-gap: 10px;
-      padding-top: 2px;
-   }
-   .row4{
-      display: grid;
-      grid-template-columns: 216.96px 354.24px;
-      grid-gap: 10px;
-      padding-top: 2px;
-   }
-   .gallery img{
-      width: 100%;
-      padding: 0px;
-   }
-   .galleryPage{
-      display: block; 
-   }
-  
-         
-  
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-gap: 20px;
+      height: 500px;
       
+   }
+   
+   .towns div{
+      display: block;
+      margin: .5rem auto;
+      box-shadow: 2px -2px 5px 0px black;
+      outline:  black;
+      
+   }
+   .townie{
+      width: 80%;
+   }
+   .towns section{
+      width: 300px;
+      height: 230px;
+   }
+   .towns img{
+      box-shadow: 2px 2px 5px 0px black;
+   }
+   footer{
+      width: 92%;
+   }
+ 
 }
