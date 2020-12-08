@@ -1,7 +1,7 @@
 window.addEventListener('load', (event)=>{
-   // Source
-   const urlDay = "lesson10/apiDay.json";
-   const urlWeek = "lesson10/apiWeek.json";
+   // Sources
+   const urlDay = "/lesson10/apiDay.json";
+   const urlWeek = "/lesson10/apiWeek.json";
 
    // Current JSON
    fetch(urlDay)
@@ -9,17 +9,17 @@ window.addEventListener('load', (event)=>{
        return response.json();
    })
    .then(function (jsonObject) {
-       // Set the current temp
-       document.getElementById("curTemp").textContent = Math.floor(jsonObject.main.temp);
+       // curTemp
+       document.getElementById("curTemp").textContent = Math.round(jsonObject.main.temp,0) + '\u00B0F';
 
-       // Set the high
-       document.getElementById("highTemp").textContent = Math.floor(jsonObject.main.temp_max);
+       // highTemp
+       document.getElementById("highTemp").textContent = Math.round(jsonObject.main.temp_max,0) + '\u00B0F';
 
-       // Set the current humidity.
-       document.getElementById("humidity").textContent = Math.floor(jsonObject.main.humidity);
+       // Humidity.
+       document.getElementById("humidity").textContent = Math.round(jsonObject.main.humidity,0) + '%';
 
-       // Set the current windspeed.
-       document.getElementById("windSpeed").textContent = jsonObject.wind.speed;
+       // Windspeed
+       document.getElementById("windSpeed").textContent = jsonObject.wind.speed + ' mph';
 
        // Calculate the windchill.
        windChill(jsonObject.main.temp, jsonObject.wind.speed);
@@ -31,40 +31,35 @@ window.addEventListener('load', (event)=>{
        return response.json();
    })
    .then(function (jsonObject) {
-       // Pass the weather list from the json file.
        const weatherList = jsonObject["list"];
-
-       // Setup the days in the week.
        let days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
-
-       // Setup the counter.
        let num = 0;
-       // Loop through each item in the list adding each card.
+
+       // Loop through JSON
        for (i = 0; i < weatherList.length; i++) {
-           // Find the time stamp and put it in a date object.
-           let afternoon = new Date(weatherList[i].dt_txt)
+           let dates = new Date(weatherList[i].dt_txt)
 
-           // Add the card if the hour is 18.
-           if (afternoon.getHours() == 18){
-               // Add one to the counter.
-               num = num + 1;
+           // Find 18:00
+           if (dates.getHours() == 18){  
+               num++;
 
-               // Setup the document ids.
+               // Page ID's
                let page_id = "day" + num;
                let page_img = "img" + num;
                let page_output = "temp" + num;
 
-               // Convert the temperature from Kelvin to Farenheit.
-               let curTemp = Math.floor((weatherList[i].main.temp - 273.15) * (9 / 5) + 32);
+               // Day of Week
+               document.getElementById(page_id).textContent = days[dates.getDay()];
 
-               // Label the day for that card.
-               document.getElementById(page_id).textContent = days[afternoon.getDay()];
+               // Temp
+               let curTemp = Math.round(weatherList[i].main.temp);
+               document.getElementById(page_output).textContent = curTemp + '\u00B0F';;
 
-               // Add the temperature for that card.
-               document.getElementById(page_output).textContent = curTemp;
-
-               // Create the image link and add it to the card.
-               let imagesrc = 'https://openweathermap.org/img/w/' + weatherList[i].weather[0].icon + '.png';
+               // Icon Image
+               var icon = weatherList[i].weather[0].icon;
+               console.log(icon);
+               icon = icon.substring(0,2)
+               let imagesrc = '/images/icons/' + icon + '.png'; 
                document.getElementById(page_img).setAttribute('src', imagesrc);
            }
        }

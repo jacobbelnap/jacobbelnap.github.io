@@ -57,7 +57,7 @@ footer {
    background-color: #397CB3;
    margin: 0 auto;
    padding: 10px;
-   color: white
+   color: white;
 }
 footer a {
    font-size: 1em;
@@ -173,6 +173,27 @@ header {
 .thankyou a{
    color: red;
 }
+.article{
+   background-color: white;
+   margin-top: 70px;
+   padding: 15px;
+   width: 95%; 
+}
+.articleRight img{
+   padding-right: 30px;
+}
+.contact{
+   color: #214366;
+   font-size: 1.1em;
+}
+.contact p{
+   margin-left: 23px;
+}
+.contact h4{
+   font-size: 1.4em;
+   text-align: center;
+}
+
 
 /*Medium View*/
 @media screen and (min-width:738px){
@@ -230,7 +251,9 @@ header {
       padding: 20px; 
       font-size: 1.4em;
    }
-
+   footer{
+      width: 85%;
+   }
   
 }
 
@@ -305,5 +328,17 @@ header {
    .weekday img{
       width: 50px;
    }
-   
+   .article{
+      display: grid;
+      grid-template-columns: 1fr 300px;
+      grid-gap: 40px;
+   }
+   .article img{
+      padding-left: 30px;
+      padding-top: 30px;
+      width: 80%;
+   }
+   footer{
+      width: 92%;
+   }
 }
