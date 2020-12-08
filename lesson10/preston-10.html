@@ -41,42 +41,44 @@
             <source  id="hero" srcset="/images/heroLarge.jpg" media="(min-width:1070px)">
          <img  id="hero" src="/images/heroSmall.jpg" alt="Beautiful Preston Idaho Mountain Range">
       </picture>
+      <div class="cityWeather">
       <section class="stats"> 
          <h2>Weather Summary:</h2>
-         <p>Currently: <span id="curTemp" class="num">-9</span></p>
-         <p>High: <span id="highTemp" class="num">48</span></p>
+         <p>Currently: <span id="curTemp" class="num"></span></p>
+         <p>High: <span id="highTemp" class="num"></span></p>
          <p>Wind Chill: <span id="windChill" class="num"></span></p>
-         <p>Humidity: <span id="humidity" class="num">40%</span></p>
-         <p>Wind Speed: <span id="windSpeed" class="num">5</span></p>
+         <p>Humidity: <span id="humidity" class="num"></span></p>
+         <p>Wind Speed: <span id="windSpeed" class="num"></span></p>
         </section>
+      </div>
    </div>
    <div class="forecast">
       <h2>Five Day Forecast</h2>
       <div class="week">
          <div class="weekday">
-            <h3>Day</h3>
-            <img src="/images/sunny.png" alt="sunny">
-            <p>48℉</p>
+            <h3 id="day1"><Day</h3>
+            <img  id="img1">
+            <p id="temp1"></p>
          </div>
          <div class="weekday">
-            <h3>Day</h3>
-            <img src="/images/cloudy.png" alt="cloudy">
-            <p>45℉</p>
+            <h3 id="day2"></h3>
+            <img  id="img2">
+            <p id="temp2"></p>
          </div>
          <div class="weekday">
-            <h3>Day</h3>
-            <img src="/images/cloudy.png" alt="cloudy">
-            <p>42℉</p>
+            <h3 id="day3"></h3>
+            <img  id="img3">
+            <p id="temp3"></p>
          </div>
          <div class="weekday">
-            <h3>Day</h3>
-            <img src="/images/rainy.png" alt="rainy">
-            <p>38℉</p>
+            <h3 id="day4"></h3>
+            <img  id="img4">
+            <p id="temp4"></p>
          </div>
          <div class="weekday">
-            <h3>Day</h3>
-            <img src="/images/snowy.png" alt="snowy">
-            <p>29℉</p>
+            <h3 id="day5"></h3>
+            <img  id="img5">
+            <p id="temp5"></p>
          </div>
       </div>
    </div>
@@ -129,7 +131,7 @@
  <script src="/scripts/curDate.js"></script>
  <script src="/scripts/toggle.js"></script>
  <script src="/scripts/pancake.js"></script>
- <script src="/scripts/windchill.js"></script>
+ <script src="/scripts/prestonData.js"></script>
  <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
  <script>WebFont.load({google: {families: ['Mukta']}});</script>
 </body>
