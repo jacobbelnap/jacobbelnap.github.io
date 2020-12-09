@@ -103,7 +103,6 @@ header {
 }
 .towns div{
    text-align: center;
-   
    box-shadow: 3px 3px 10px 3px black;
    margin-bottom: 30px;
 }
@@ -119,6 +118,9 @@ header {
 }
 .towns img{
    height: 100%;
+}
+.towns a{
+   text-decoration: none;
 }
 #inner{
    cursor: pointer;
@@ -170,14 +172,12 @@ header {
       grid-template-rows: 1fr 1fr 1fr;
       grid-gap: 40px;
    }
-   .towns div{
-      display: flex;
+   .towns div a{
       margin: .5rem auto;
       display: flex;
       box-shadow: 3px 3px 10px black;
-      height: 232px;
    }
-   .towns div:nth-child(even) {
+   .towns div a:nth-of-type(odd) {
       flex-direction: row-reverse;
    }
    .towns section{

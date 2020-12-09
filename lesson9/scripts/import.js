@@ -51,12 +51,12 @@ window.addEventListener('load', (event)=>{
                   link.setAttribute('href','/' + towns[i].name.split(" ").join("") + '-8.html');
 
                   //Append cards to Townie
-                  townie.appendChild(card);
-                  townie.appendChild(card2);
+                  link.appendChild(card);
+                  link.appendChild(card2);
+                  let townName = towns[i].name.split("").join("").toLowerCase();
+                  link.setAttribute('href','/lesson10/' + townName + "-10.html");
                   townie.appendChild(link);
-                  townie.setAttribute('id', "inner");
-                  townie.setAttribute('onclick', "window.location='https://jacobbelnap.github.io/lesson10/"+towns[i].name.split(" ").join("")+".html");
-
+                  
                   //Add entire card to HTML
                   document.querySelector('div.towns').appendChild(townie);
                }
