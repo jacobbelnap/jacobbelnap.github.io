@@ -24,6 +24,9 @@ window.addEventListener('load', (event)=>{
                let photo = document.createElement('img');
 
                if (towns[i].name == "Preston" || towns[i].name == "Fish Haven" || towns[i].name == "Soda Springs") {
+                  let counter = 0;
+                  counter++;
+
                   //Append Name
                   name.textContent = towns[i].name + ', ID';
                   card.appendChild(name);

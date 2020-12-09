@@ -115,6 +115,8 @@ header {
 .towns p{
    color: #214366;
    font-weight: 500;
+   margin-left: 10px;
+   margin-right: 10px;
 }
 .towns img{
    height: 100%;
@@ -171,15 +173,20 @@ header {
       display: grid;
       grid-template-rows: 1fr 1fr 1fr;
       grid-gap: 40px;
+      padding-top: 40px;
+   }
+   .towns div{
+      margin: auto;
+      margin-bottom: 30px;
    }
    .towns div a{
-      margin: .5rem auto;
       display: flex;
       box-shadow: 3px 3px 10px black;
+      
    }
-   .towns div a:nth-of-type(odd) {
+   .towns div:nth-of-type(2n) a {
       flex-direction: row-reverse;
-   }
+  }
    .towns section{
       min-width: 350px;
    }
@@ -265,31 +272,19 @@ header {
    .towns {
       display: grid;
       grid-template-columns: 1fr 1fr 1fr;
-      grid-gap: 20px;
-      height: 500px;
-      
+      grid-gap: 40px;
+      height: 550px;
    }
-   
-   .towns div{
+   .towns div a{
       display: block;
-      margin: .5rem auto;
-      box-shadow: 2px -2px 5px 0px black;
-      outline:  black;
-      
-   }
-   .townie{
-      width: 80%;
    }
    .towns section{
       width: 300px;
-      height: 230px;
-   }
-   .towns img{
-      box-shadow: 2px 2px 5px 0px black;
+      height: 235px;
    }
    footer{
       width: 92%;
    }
  
-}
+ }  
 }
