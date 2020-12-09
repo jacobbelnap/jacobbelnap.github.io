@@ -56,7 +56,7 @@ window.addEventListener('load', (event)=>{
                   //Append cards to Townie
                   link.appendChild(card);
                   link.appendChild(card2);
-                  let townName = towns[i].name.split("").join("").toLowerCase();
+                  let townName = towns[i].name.split(" ").join("").toLowerCase();
                   link.setAttribute('href','/lesson10/' + townName + "-10.html");
                   townie.appendChild(link);
                   
