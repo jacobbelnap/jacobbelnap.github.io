@@ -2,6 +2,7 @@ window.addEventListener('load', (event)=>{
    // Sources
    const urlDay = "https://api.openweathermap.org/data/2.5/weather?id=5585000&appid=90aa44ab21553c527d4d2c29884c7797&units=imperial";
    const urlWeek = "https://api.openweathermap.org/data/2.5/forecast?id=5585000&appid=90aa44ab21553c527d4d2c29884c7797&units=imperial";
+   const townData = "https://byui-cit230.github.io/weather/data/towndata.json";
 
    // Current JSON
    fetch(urlDay)
@@ -61,10 +62,35 @@ window.addEventListener('load', (event)=>{
                icon = icon.substring(0,2)
                let imagesrc = '/images/icons/' + icon + '.png'; 
                document.getElementById(page_img).setAttribute('src', imagesrc);
-           }
-       }
-   });
-});
+            }
+        }
+    });
+ 
+    //Event Data
+ fetch(townData)
+ .then(function (response){
+     return response.json();
+ })
+ .then(function (jsonObject) {
+     const towns = jsonObject.towns;
+ 
+     for (i=0;i<towns.length;i++){
+         if (towns[i].name == "Fish Haven") {
+ 
+             let title = document.createElement("h2");
+                 title.textContent = "Upcoming Events"
+                 document.getElementById("events").appendChild(title);
+ 
+             for (m=0;m<towns[i].events.length;m++) {
+                 let event = document.createElement("p");
+                 event.textContent = towns[i].events[m];
+                 document.getElementById("events").appendChild(event);
+             };
+         };
+     };
+ });
+ });
+ 
 
 // Windchill Function
 const windChill = function(temp, speed){

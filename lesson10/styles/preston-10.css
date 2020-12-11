@@ -193,6 +193,13 @@ header {
    font-size: 1.4em;
    text-align: center;
 }
+#events{
+   text-align: center;
+}
+#events h2{
+   color: #214366;
+   text-decoration: underline;
+}
 
 
 /*Medium View*/
