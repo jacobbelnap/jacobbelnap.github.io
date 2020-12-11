@@ -44,14 +44,17 @@ main {
 footer {
    text-decoration: none;
    padding-bottom: 5px;
-   color: #214366;
+   padding-top: 10px;
+   color: white;
    margin: auto;
    text-align: center;
    font-size: 1em;
+   background-color: #397CB3;
+   
 }
 footer a {
    font-size: 1em;
-   color: #214366;
+   color: white;
 }
 
 header {
@@ -132,6 +135,34 @@ header {
 .forecast{
    text-align: center;
 }
+#banner {
+   max-width: 100%;
+}
+.banner{
+   position: relative;
+}
+.stats h2{
+   color: red;
+   text-shadow: 1.5px 1.5px 0 white;
+   font-size: 1em;
+}
+.stats {
+   position: absolute;
+   top: -5%;
+   right: 4%;
+   line-height: .3em;
+   color: white;
+   background: radial-gradient(#eee, #397CB3);
+	border: 1px solid #214366;
+	padding: .6rem;
+	box-shadow: 0 0 30px #111;
+	opacity: .75;
+}
+.stats span{
+   color: #214366;
+   font-size: 1.1em;
+   font-weight: 700;
+}
 
 
 /*Medium View*/
@@ -182,6 +213,11 @@ header {
       display: grid;
       grid-template-columns: 1fr 1fr;
    }
+   main, footer{
+      width:80%;
+      margin: auto;
+      margin-top: 40px;
+   }
    
 }
 
@@ -196,54 +232,6 @@ header {
        border-radius: 5px 5px 5px 5px;
        
    }
-   
-   header {
-      display: grid;
-      grid-template-columns: 320px 1fr;
-      grid-template-rows: 1fr 60px;
-   }
-   .left {
-      grid-column: 1;
-      grid-row: 1/3;
-      background-color: #397CB3;
-      position: relative;
-      z-index: 9;
-   }
-   .left::before {
-      content: "";
-      position: absolute;
-      z-index: -1;
-      top: 0;
-      right: 0;
-      bottom: 60px;
-      left: 0;
-      background-color: #214366;
-   }
-   .rightup {
-      grid-column: 2/3;
-      grid-row: 1/2;
-      background-color: #214366;
-      padding: 8px 0px;
-      color: white;
-      height: 100px;
-      text-shadow: 1.5px 1.5px 0 black;
-      line-height: 1em;
-   }
-   .rightup h3 {
-      margin-left: 20px;
-   }
-   
-   .rightdown {
-      grid-column: 2/3;
-      grid-row: 2/3;
-      background-color: #397CB3;
-   }
-   .logo img{
-     margin-left: 8px;
-     margin-top: 6px;
-     width: 300px;
-   }
-
    .banner h2 {
       top: 5%;
       left: 60%;
@@ -252,9 +240,5 @@ header {
    .weekday img{
       width: 50px;
    }
-   main, footer{
-      width:80%;
-      margin: auto;
-      margin-top: 40px;
-   }
+  
 }
