@@ -3,7 +3,7 @@
      {
        "name": "Cebu",
        "image": "cebuTemple.jpg",
-       "address": "Gorordo Avenue, Barangay Lahug, Cebu City, 6000 Cebu, Philippines",
+       "address": "Gorordo Avenue, Barangay Lahug, Cebu City",
        "telephone": "(63) 32-230-1207",
        "phase": "PHASE 2",
        "dedicated": "13 June 2010",
@@ -15,13 +15,13 @@
      {
       "name": "Manila",
       "image": "manilaTemple.jpg",
-       "address": "13 Temple Drive corner Whiteplains Avenue Greenmeadows Subdivision, UGONG NORTE, Quezon City, 1110 Metro Manila, Philippines",
+       "address": "13 Temple Drive corner Whiteplains Avenue Greenmeadows Subdivision, UGONG NORTE, Quezon City",
        "telephone": "(63) 2-8635-9111",
        "phase": "PHASE 2",
        "dedicated": "25 September 1984",
        "services": [
          "clothing rental",
-         "distribution center nearby",
+         " distribution center nearby",
          "cafeteria closed"
        ]
      },

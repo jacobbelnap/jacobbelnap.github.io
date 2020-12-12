@@ -103,29 +103,29 @@ main{
 }
 .pic h4{
    color: white;
-   position: relative;
    bottom: 80px;
+   position: relative;
    font-size: 1.5em;
 }
 .featured{
    background-color: #e6d88a;
-   width: 60%;
+   width: 100%;
    margin: 0 auto;
    padding: 10px;
    text-align: center;
    color: #615B3A
 }
+.featured img{
+   width: 80%;
+}
 .featured p{
    text-align: left;
 }
 
-
-
-
 .gallery{
    height: 300px;
    background-color: #e6d88a;
-   margin-bottom: 20px;
+   width: 100%;
 }
 .gallery h2{
    text-align: center;
@@ -215,6 +215,7 @@ footer img{
   clip-path: inset(10px);
 }
 /*End Image Scroller*/
+
 .locGallery{
    margin: 0 auto;
    text-align: center;
@@ -292,9 +293,13 @@ footer img{
    }
    .pic{
       display: block;
+      text-align: center;
    }
    .pic img:hover{
       opacity: .7;
+   }
+   .pic img{
+      width: 100%;
    }
    .pic a{
       text-decoration: none;
@@ -305,14 +310,28 @@ footer img{
    .content p{
       text-align: left;
    }
+   .featured{
+      width: 75%;
+   }
+   #fCard{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 10px;
+      padding-top: 20px;
+   }
+   #fCard img{
+      width: 95%;
+   }
    .locGallery{
       display: grid;
-      grid-template-columns: 300px 282px 243px;
-      width:850px;
+      /*300px 282px 243px*/
+      grid-template-columns: 1fr 1fr 1fr;
+      width:100%;
       grid-gap: 10px;
    }
    .locGallery img{
-      width: 100%;
+      height: 50%;
+      width: auto;
    }
    .locations h2{
       text-align: left;
@@ -348,21 +367,13 @@ footer img{
       width: 90%;
       height: auto;
    }
-   
-   .locGallery img{
-     height: auto;
-     width: 100%;
-   }
    .locGallery{
-      display: grid;
-      grid-template-columns:  .363636fr .341818fr .294545fr;;
-      width:90%;
+      margin-top: 50px;
    }
-
-   .locations h2{
-      text-align: left;
-      margin-top: 20px;
+   .locGallery img{
+      height: 100%;
    }
+  
    
   
 }
