@@ -21,7 +21,8 @@
        "dedicated": "25 September 1984",
        "services": [
          "clothing rental",
-         "distribution center nearby"
+         "distribution center nearby",
+         "cafeteria closed"
        ]
      },
      {
@@ -42,7 +43,7 @@
       "address": "Milalak Dr, Yigo, Guam",
       "telephone": "N/A",
       "phase": "Closed for Construction",
-      "groundbreaking": "4 May 2019",
+      "dedicated": "TBD",
       "services": [
         "clothing rental",
         "distribution center nearby"
