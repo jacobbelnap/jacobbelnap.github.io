@@ -1,5 +1,4 @@
 body {
-   background-color: lightgray;
    margin: 0 auto;
    font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
 }
@@ -31,26 +30,221 @@ header a{
 .responsive li{
    display: block;
 }
+.responsive li:last-child{
+   display: none;
+}
+.subServ{
+   display: none;
+}
+.subLoc{
+   display: none;
+}
 main{
    background-color: white;
 }
 #logo img{
-   height: 70px;
+   height: 60px;
 }
 .gray{
-   background-color: grey;
+   background-color: #615B3A;
    height: 15px;
+}
+.upper {
+   background-color: #E0C843;
+   display: grid;
+   grid-template-columns: 120px 1fr;
+   min-height: 60px;
+}
+.underline {
+   text-decoration: none; 
+   position: relative; 
+ }   
+.underline:after {
+    position: absolute;
+    content: '';
+    height: 2px;
+    bottom: -3px; 
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    width: 70%;
+    background: #615B3A;
+}
+.heroImg {
+   width: 100%;
+}
+.hero{
+   position: relative;
+}
+
+#makeReservation {
+   position: absolute;
+   top: 65%;
+   left: 8%;
+   line-height: .3em;
+   color: white;
+   background-color: red;
+	border: 1px solid darkred;
+	padding: .9rem;
+   box-shadow: 0 0 30px #111;
+   font-size: 1.7rem;
+}
+.content{
+   text-align: center;
+   padding: 15px;
+}
+
+.content ul{
+   text-align: left;
+   margin-left: 25%;
+}
+.pic{
+   display: none;
+}
+.pic h4{
+   color: white;
+   position: relative;
+   bottom: 80px;
+   font-size: 1.5em;
+}
+.featured{
+   background-color: #e6d88a;
+   width: 60%;
+   margin: 0 auto;
+   padding: 10px;
+   text-align: center;
+   color: #615B3A
+}
+.featured p{
+   text-align: left;
+}
+
+
+
+
+.gallery{
+   height: 300px;
+   background-color: #e6d88a;
+   margin-bottom: 20px;
+}
+.gallery h2{
+   text-align: center;
+   color: #615B3A;
+   font-size: 1.8em;
+   padding: 10px;
+}
+footer{
+   background-color: #615B3A;
+   height: auto;
+   color: white;
+   text-align: center;
+   padding: 4px;
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   grid-gap:10px;
+}
+footer img{
+   width: 30px;
+   position: relative;
+   bottom: 10px;
+}
+.rightFooter{
+   display: grid;
+   grid-template-rows: 60px 40px 40px 40px;
+}
+.rightFooter a{
+   display: grid;
+   grid-template-columns: 30px 1fr;
+   width: 220px;
+   text-decoration: none;
+}
+.rightFooter a p{
+   position: relative;
+   bottom: 20px;
+   color: white;
+}
+
+/*Image Scroller*/
+@keyframes scroller {
+   0% { -webkit-transform: translate3d(0, 0, 0);
+       transform: translate3d(0, 0, 0);
+       visibility: visible;}
+   100% {-webkit-transform: translate3d(-100%, 0, 0);
+         transform: translate3d(-100%, 0, 0);}}
+@keyframes bloom {
+  0% {filter: grayscale(0);}
+  40% {filter: grayscale(.5);}
+  100% {filter: grayscale(.8);}
+}
+.scroller-left {
+   left: 100%;
+}
+.image-scroller{
+   display: flex;
+   width: 100%;
+   overflow: hidden;
+   align-items: space-between;
+   justify-content: center;
+}
+.image-scroller-left {
+   left: 100%;
+}
+.image-scroller .look{
+ white-space: nowrap;
+   -webkit-animation-iteration-count: infinite;
+   animation-iteration-count: infinite;
+   -webkit-animation-timing-function: linear;
+   animation-timing-function: linear;
+   -webkit-animation-name: scroller;
+   animation-name: scroller;
+   -webkit-animation-duration: 80s;
+   animation-duration: 80s;
+}
+.look img{
+   height: 30%;
+   margin-right: 40px; 
+   filter: grayscale(0);
+   -webkit-clip-path: inset(0 0 0 0);
+   clip-path: inset(0 0 0 0);
+   -webkit-transition: 1s cubic-bezier(.075,.82,.165,1);
+   -moz-transition: 1s cubic-bezier(.075,.82,.165,1);
+   transition: 1s cubic-bezier(.075,.82,.165,1);
+}
+.look img:hover{
+  animation: bloom ease-in-out .75s forwards;
+  clip-path: inset(10px);
+}
+/*End Image Scroller*/
+.locGallery{
+   margin: 0 auto;
+   text-align: center;
+}
+.locGallery a{
+   text-decoration: none;
+}
+.locGallery a:hover{
+   opacity: .7;
+}
+.locGallery h4{
+   color: white;
+   position: relative;
+   bottom: 70px;
+   font-size: 1.3em;
+}
+.locations{
+   text-align: center;
+   margin-top: 50px;
+}
+.locGallery img{
+   width: 70%;
 }
 
 
 
 /*Medium View*/
-@media screen and (min-width:738px){
+@media screen and (min-width:870px){
    .upper {
-      display: grid;
       grid-template-columns: 1fr 600px;
-      margin-top: 10px;
-      background-color: gold;
    }
    
    .rightSide{
@@ -60,34 +254,115 @@ main{
       margin-right: 10px;
       position: absolute;
       right: 10px;
-      top: 15px;
+      top: 5px;
+      font-size: 1.3em;
    }
    .navigation li{
       display: inline;
       padding: 12px;    
       border-radius: 1px 1px 1px 1px;
       margin-right: 0px;
-     
-      
   }
   .navigation li:first-child{
      display: none;
   }
-   main{
-      background-color: lightcyan;
-   }
+  .underline:after {
+   bottom: -6px; 
+  }
   
+  main{
+   width: 95%;
+   margin: 0 auto;
+  }
+  #makeReservation {
+   left: 13%;
+   font-size: 2.1rem;
+   } 
+   .content{
+      display: grid;
+      grid-template-columns: 40% 1fr;
+      padding: 10px;
+      min-height: 320px;
+   }
+   .content ul{
+      margin-left: 40px;
+   }
+   .text{
+      padding-right: 30px;
+   }
+   .pic{
+      display: block;
+   }
+   .pic img:hover{
+      opacity: .7;
+   }
+   .pic a{
+      text-decoration: none;
+   }
+   .pic img{
+      height: 90%;
+   }
+   .content p{
+      text-align: left;
+   }
+   .locGallery{
+      display: grid;
+      grid-template-columns: 300px 282px 243px;
+      width:850px;
+      grid-gap: 10px;
+   }
+   .locGallery img{
+      width: 100%;
+   }
+   .locations h2{
+      text-align: left;
+      margin-top: 20px;
+   }
+   .rightFooter{
+      margin-left: 180px;
+   
 }
 
 
-
 /*Large View*/
-@media screen and (min-width:1070px){
-   .navigation li{ 
-       
-   }
+@media screen and (min-width:1150px){
    main{
-      background-color: grey;
+      background-color: white;
+   }
+   .upper {
+      grid-template-columns: 1fr 700px;
+   }
+   #makeReservation {
+      top: 70%;
+      padding: 1.2rem
+   }
+   .content{
+      grid-template-columns: 50% 1fr;
+      min-height: 350px;
+   }
+   .text{
+      padding-right: 70px;
+      font-size: 1.2em;
+   }
+   .pic img{
+      width: 90%;
+      height: auto;
    }
    
+   .locGallery img{
+     height: auto;
+     width: 100%;
+   }
+   .locGallery{
+      display: grid;
+      grid-template-columns:  .363636fr .341818fr .294545fr;;
+      width:90%;
+   }
+
+   .locations h2{
+      text-align: left;
+      margin-top: 20px;
+   }
+   
+  
 }
