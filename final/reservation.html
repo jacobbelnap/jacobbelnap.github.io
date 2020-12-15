@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <meta name="description" content="Home Page for Temple Inn and Suites.">
+   <title>Temple Inn & Suites</title>
+   <link rel="shortcut icon" href="images/moroni.ico">
+   <link rel="stylesheet" href="styles/locations.css">
+   <link rel="stylesheet" href="styles/reservation.css">
+   <link rel="stylesheet" href="styles/normalize.css">
+</head>
+<body>
+<header>
+   <div class="upper">
+      <div class="leftSide">
+         <span id="logo"><img src="images/logoFull.png" alt="Temple Inn & Suites Logo"></span>
+      </div>
+      <div class="rightSide">
+         <ul class="navigation">
+               <li class="ham"><a href="#">&#9776;</a></li>
+               <li><a href="index.html">Home</a></li>
+               <li><a href="locations.html">Locations</a></li>
+               <li><a href="services.html">Services</a></li>
+               <li id="phone"><a href="#">(208) 932-5005</a></li>   
+         </ul>
+      </div>
+   </div>
+   <div class="gray"></div>
+   <div class="hero">
+      <picture>
+         <source class="heroImg" srcset="images/locHero/locHeroMedium.jpg" media="(min-width:830px) and (max-width:1150px)">
+            <source  class="heroImg" srcset="images/locHero/locHeroLarge.jpg" media="(min-width:1150px)">
+         <img  class="heroImg" src="images/locHero/locHeroSmall.jpg" alt="Beautiful Beach Resort">
+      </picture>
+   </div>
+</header>
+<main>
+   <form method="GET" action="thanks.html">
+      <fieldset>
+         <legend>Your Stay</legend>
+         
+         <label class="top">Location<input type="text" name="location" required=""></label>
+         <div class="splitDate">
+            <label class="top">Arrival<input type="date" name="startDate" required=""></label>
+            <label class="top">Departure <input type="date" name="endDate" required=""></label>
+         </div>
+         <label class="top"># of Rooms<input type="num" required=""></label>
+         
+         <div class="splitSBS">
+            <section>
+               <div>Size of Bed(s)</div>
+               <label class="sbs"><input type="radio" name="bedSize" value="King"> King</label>
+               <label class="sbs"><input type="radio" name="bedSize" value="Queen"> Queen</label>
+               <label class="sbs"><input type="radio" name="bedSize" value="Full"> Full</label>
+            </section>  
+            <section>
+               <div>Room Type</div>
+               <label class="sbs"><input type="radio" name="rType" value="Deluxe"> Deluxe</label>
+               <label class="sbs"><input type="radio" name="rType" value="Double"> Double</label>
+               <label class="sbs"><input type="radio" name="rType" value="Single"> Single</label>
+               <label class="sbs"><input type="radio" name="rType" value="Kitchenette"> Kitchenette</label>
+            </section>
+         </div>
+      </fieldset>
+      <fieldset class="contact">
+         <legend>Your Information</legend>
+         <label class="top">First and Last Name<input type="text" name="fname" required=""></label>
+         <label class="top">Email<input type="email" name="email" required=""></label>
+         <label class="top">Phone<input type="tel" name="phone"></label>
+         <label class="top">Zip<input type="text" name="zip" required=""></label>
+     </fieldset>
+      <fieldset>
+          <legend>Additional Information & Comments</legend>
+          <textarea id="comments" name="comments" rows="10" cols="40"></textarea>
+      </fieldset>
+      <fieldset>
+         <input class="submitBtn" type="submit" value="Confirm Reservation">
+      </fieldset> 
+   </form>
+</main>
+
+<footer>
+   <div class="leftFooter"> 
+      <p>&copy; <span id="curYear"></span> Temple Inn & Suites LLC</p>
+      <p>4800 Montgomery Ln #300</p>
+      <p>Bethesda, MD 20884</p>
+    </div>
+    <div class="rightFooter">
+       <h4>Contact Us</h4>
+       <section>
+          <a href="https://facebook.com" target="_blank">
+            <img src="images/facebookIcon.webp" alt="facebook">
+            <p>www.facebook.com</p>
+          </a>
+       </section>
+       <section>
+         <a href="https://instagram.com" target="_blank">
+            <img src="images/instagramIcon.webp" alt="instagram">
+            <p>www.instagram.com</p>
+         </a>
+      </section>
+      <section>
+         <a href="https://twitter.com" target="_blank">
+            <img src="images/twitterIcon.webp" alt="twitter">
+            <p>www.twitter.com</p>
+         </a>
+      </section>
+    </div>
+  
+ </footer>
+ <script src="scripts/curDate.js"></script>
+ <script src="scripts/toggle.js"></script>
+ <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+ <script>WebFont.load({google: {families: ['Mukta']}});</script>
+</body>
+</html>

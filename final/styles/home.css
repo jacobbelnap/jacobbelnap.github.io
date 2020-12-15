@@ -142,11 +142,15 @@ footer{
    display: grid;
    grid-template-columns: 1fr 1fr;
    grid-gap:10px;
+   padding-top: 20px;
 }
 footer img{
    width: 30px;
    position: relative;
    bottom: 10px;
+}
+.leftFooter{
+   padding-top: 20px;
 }
 .rightFooter{
    display: grid;
@@ -326,12 +330,11 @@ footer img{
       display: grid;
       /*300px 282px 243px*/
       grid-template-columns: 1fr 1fr 1fr;
-      width:100%;
+      width:90%;
       grid-gap: 10px;
    }
    .locGallery img{
-      height: 50%;
-      width: auto;
+      width: 100%;
    }
    .locations h2{
       text-align: left;
@@ -339,7 +342,7 @@ footer img{
    }
    .rightFooter{
       margin-left: 180px;
-   
+   }
 }
 
 
@@ -363,17 +366,9 @@ footer img{
       padding-right: 70px;
       font-size: 1.2em;
    }
-   .pic img{
-      width: 90%;
-      height: auto;
-   }
+
    .locGallery{
       margin-top: 50px;
    }
-   .locGallery img{
-      height: 100%;
-   }
-  
-   
-  
+
 }

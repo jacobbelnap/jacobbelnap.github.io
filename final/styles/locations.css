@@ -1,0 +1,257 @@
+body {
+   margin: 0 auto;
+   font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+}
+.navigation {
+   list-style: none;
+}
+.navigation li{
+   list-style-type: none;
+   font-size: 20px;
+   display: none;
+   text-align: center;
+   line-height: 1.5em;
+   margin-right: 20px;
+}
+header a{
+   text-decoration: none;
+   color: white;
+   font-size: 1.1em;
+}
+.navigation li:first-child{
+   display: block;
+}
+.navigation li:hover {
+   opacity: .5;
+}
+.responsive li{
+   display: block;
+}
+.responsive li:last-child{
+   display: none;
+}
+main{
+   background-color: white;
+}
+#logo img{
+   height: 60px;
+}
+.gray{
+   background-color: #615B3A;
+   height: 15px;
+}
+.upper {
+   background-color: #E0C843;
+   display: grid;
+   grid-template-columns: 120px 1fr;
+   min-height: 60px;
+}
+.underline {
+   text-decoration: none; 
+   position: relative; 
+ }   
+.underline:after {
+    position: absolute;
+    content: '';
+    height: 2px;
+    bottom: -3px; 
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    width: 70%;
+    background: #615B3A;
+}
+.heroImg {
+   width: 100%;
+}
+.hero{
+   position: relative;
+   background-color: #e6d88a;
+}
+
+#makeReservation {
+   line-height: .3em;
+   background-color: red;
+   box-shadow: 0 0 30px #111;
+   margin-left: 10%;
+   padding: 4px;
+   border-radius: 5px 5px 5px 5px;
+   font-size: 1.6rem;
+   height: 20px;
+   text-decoration: none;
+}
+#makeReservation a{
+   text-decoration: none;
+   color:white;
+}
+footer{
+   background-color: #615B3A;
+   height: auto;
+   color: white;
+   text-align: center;
+   padding: 4px;
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   grid-gap:10px;
+   padding-top: 20px;
+}
+footer img{
+   width: 30px;
+   position: relative;
+   bottom: 10px;
+}
+.leftFooter{
+   padding-top: 20px;
+}
+.rightFooter{
+   display: grid;
+   grid-template-rows: 60px 40px 40px 40px;
+}
+.rightFooter a{
+   display: grid;
+   grid-template-columns: 30px 1fr;
+   width: 220px;
+   text-decoration: none;
+}
+.rightFooter a p{
+   position: relative;
+   bottom: 20px;
+   color: white;
+}
+
+.color{
+   background-color: #e6d88a;
+}
+.intro{
+   text-align: center;
+   margin-bottom: 50px;
+}
+.city{
+   text-align: center;
+}
+.line{
+   margin-bottom: 20px;
+   border-bottom: 2px #615b3a solid;
+}
+.line p{
+   text-align: left;
+   margin: 20px;
+}
+.city h2{
+   background-color: #615b3a;
+   height: 50px;
+   margin: 0 auto;
+   color: white;
+   padding-top: 15px;
+   font-size: 1.8em;
+}
+.gal img{
+   width: 80%;
+}
+.thankyou{
+   text-align: center;
+   padding: 50px;
+   padding-top: 15px;
+   background-color: #e6d88a;
+   margin: 0 auto;
+   color: #615b3a;
+}
+
+
+
+/*Medium View*/
+@media screen and (min-width:870px){
+   .upper {
+      grid-template-columns: 1fr 600px;
+   }
+   
+   .rightSide{
+      text-align: left;
+   }
+   #phone{
+      margin-right: 10px;
+      position: absolute;
+      right: 10px;
+      top: 5px;
+      font-size: 1.3em;
+   }
+   .navigation li{
+      display: inline;
+      padding: 12px;    
+      border-radius: 1px 1px 1px 1px;
+      margin-right: 0px;
+   }
+   .navigation li:first-child{
+     display: none;
+   }
+   .underline:after {
+      bottom: -6px; 
+   }
+   main{
+      width: 100%;
+      margin: 0 auto;
+   }
+   
+   .rightFooter{
+      margin-left: 180px;
+   }
+
+   .info{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+   }
+   .gal div{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+   }
+   .city{
+      display: flex;
+      box-shadow: 3px 3px 10px black;
+   }
+   .city:nth-of-type(2n) {
+      flex-direction: row-reverse;
+   }
+   .line{
+      margin-bottom: 10px;
+      border-bottom: none;
+   }
+   .gal section img{
+      width: auto;
+      height: 100%;
+      
+   }
+   .gal section{
+      padding: 5px;
+      height: 170px;
+      width: 250px;
+      overflow: hidden;
+      margin-bottom: 15px;
+   }
+}
+/*Large View*/
+@media screen and (min-width:1150px){
+   main{
+      background-color: white;
+   }
+   .upper {
+      grid-template-columns: 1fr 700px;
+   }
+   .city{
+
+   }
+   
+   .gal section img{
+      width: auto;
+      height: 100%;
+      
+   }
+   .gal section{
+      padding: 5px;
+      height: 230px;
+      width: 350px;
+      overflow: hidden;
+      margin-bottom: 15px;
+   }
+   
+
+}

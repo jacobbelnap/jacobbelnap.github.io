@@ -1,0 +1,98 @@
+main{
+   text-align: center;
+}
+.intro li{
+   list-style-type: none;
+   text-align: left;
+   margin-left: 200px;
+}
+.intro{
+   margin: 0 auto;
+   width: 80%;
+}
+.wed{
+   background-color: #e6d88a;
+   padding: 20px;
+   
+}
+.wed span{
+font-size: 1.2em;
+}
+
+.missionary span{
+   font-size: 1.2em;
+}
+
+.pics img{
+   width: 80%;
+}
+.contact{
+   background-color: #e6d88a;
+   padding-top: 20px;
+   padding-bottom: 20px;
+}
+.map img{
+   height: 300px;
+   
+}
+.map{
+   text-align: center;
+   
+}
+.cInfo{
+   text-align: center;
+}
+.cInfo li{
+   list-style-type: none;
+   margin-right: 30px;
+}
+.cForm{
+}
+.cForm li{
+   list-style-type: none;
+}
+.btn{
+   margin-top:10px;
+}
+
+
+/*Medium View*/
+@media screen and (min-width:800px){
+   .pics{
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   grid-gap: 5px;
+   }
+   .pics img{
+      width: 100%;
+   }
+   .missionary{
+      padding: 20px;
+      grid-gap: 30px;
+   }
+   .wed{
+      background-color: #e6d88a;
+      padding: 20px;
+      grid-gap: 30px;
+   }
+   .contact{
+      background-color: #e6d88a;
+      justify-content: center;
+      padding: 20px;
+      grid-gap: 30px;
+   }
+   .cInfo{
+      text-align: left;
+   }
+   .map img{
+      height: 370px;
+   }
+
+   .flex{
+      display: flex;
+      box-shadow: 3px 3px 10px black;
+   }
+   .flex:nth-of-type(2n) {
+      flex-direction: row-reverse;
+   }
+}

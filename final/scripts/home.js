@@ -1,7 +1,7 @@
 window.addEventListener('load', (event)=>{
    // Sources
    const requestURL = "https://jacobbelnap.github.io/final/scripts/temples.json";
-   const featuredCity= "Cebu";
+   const featuredCity= "Manila";
    fetch(requestURL)
    .then(function (response) {
        return response.json();
@@ -27,6 +27,9 @@ window.addEventListener('load', (event)=>{
         let fPhoto = document.createElement('img');
         let fLink = document.createElement('a');
         let fDesc = document.createElement('h4');
+
+        let cleanName = temples[i].name.split(" ").join("").toLowerCase();
+        console.log(cleanName);
 
         // Choose Featured
         if (temples[i].name == featuredCity){  
@@ -89,19 +92,21 @@ window.addEventListener('load', (event)=>{
 
             // A tag
             fLink.appendChild(fCard);
-            fLink.setAttribute('href', temples[i].name + '.html');
+            fLink.setAttribute('href', 'locations.html#'+cleanName);
+            fLink.setAttribute('data-href', '#'+ cleanName);
             
             // Append to Doc
             document.querySelector('div.pic').appendChild(fLink);
         }
         else{
+            // ----------------------------Other Locations Cards----------------------------
             //City Name
             fDesc.textContent = temples[i].name; 
 
             // Photo
-            let photo = temples[i].name.split(" ").join("");
+            
             console.log(photo);
-            fPhoto.setAttribute('src','images/' + photo + 'Hotel.jpg');
+            fPhoto.setAttribute('src','images/' + cleanName + 'Hotel.jpg');
             fPhoto.setAttribute('alt', fDesc.textContent + ' Hotel');
 
             fCard.appendChild(fPhoto);
@@ -109,7 +114,9 @@ window.addEventListener('load', (event)=>{
 
             // A tag
             fLink.appendChild(fCard);
-            fLink.setAttribute('href', photo + '.html');
+            fLink.setAttribute('href','locations.html#'+ cleanName);
+            fLink.setAttribute('data-href', '#' + cleanName);
+            console.log(fLink);
             
             // Append to Doc
             document.querySelector('div.locGallery').appendChild(fLink);

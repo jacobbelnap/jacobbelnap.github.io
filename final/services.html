@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <meta name="description" content="Home Page for Temple Inn and Suites.">
+   <title>Temple Inn & Suites</title>
+   <link rel="shortcut icon" href="images/moroni.ico">
+   <link rel="stylesheet" href="styles/services.css">
+   <link rel="stylesheet" href="styles/locations.css">
+   <link rel="stylesheet" href="styles/normalize.css">
+</head>
+<body>
+<header>
+   <div class="upper">
+      <div class="leftSide">
+         <span id="logo"><img src="images/logoFull.png" alt="Temple Inn & Suites Logo"></span>
+      </div>
+      <div class="rightSide">
+         <ul class="navigation">
+               <li class="ham"><a href="#">&#9776;</a></li>
+               <li><a href="index.html">Home</a></li>
+               <li><a href="locations.html">Locations</a></li>
+               <li><a href="services.html" class="underline">Services</a></li>
+               <li id="phone"><a href="#">(208) 932-5005</a></li>   
+         </ul>
+      </div>
+   </div>
+   <div class="gray"></div>
+   <div class="hero">
+      <picture>
+         <source class="heroImg" srcset="images/hero/heroMedium.jpg" media="(min-width:830px) and (max-width:1150px)">
+            <source  class="heroImg" srcset="images/hero/heroLar.jpg" media="(min-width:1150px)">
+         <img  class="heroImg" src="images/hero/heroSmall.jpg" alt="Beautiful Beach Resort">
+      </picture>
+   </div>
+</header>
+<main>
+   <div class="intro">
+      <h2>Special Services and Accommodations</h2>
+      <p>Our hotels are designed to make your temple visits convenient and comfortable. Whether your planning for a wedding, serving a mission, or just visiting a temple, we have created services to make your stay a little easier. Our most-loved services are our wedding package and long-term stays. In addition to those, we also offer short-term babysitting, changing rooms, and temple shuttles.
+      </p>  
+   </div>
+   <div class="wed flex" id="reception">
+      <section>
+         <h4>Wedding Package - <span>$3,500</span></h4>
+         <p>Looking for a place to hold your reception? How about right where you stay. We've helped thousands of couples celebrate their special day.  </p>
+         <p>Includes:</p>
+         <ul>
+            <li>Reception Hall Reservation (48hr slot)</li>
+            <li>Catering Services (up to 350 people)</li>
+            <li>Full-sized Kitchen Access </li>
+            <li>Janitorial Services</li>
+            <li>Optional: DJ Services (Extra $200/hr)</li>
+         </ul>
+      </section>
+      <section class="pics">
+         <img src="images/cebuWed.jpeg" alt="Cebu Reception Hall">
+         <img src="images/hongkongWed.jpeg" alt="Hong Kong Reception Hall">
+         <img src="images/guamWed.jpeg" alt="Guam Reception Hall">
+         <img src="images/manilaWed.jpeg" alt="Manila Reception Hall">
+      </section>
+   </div>
+   <div class="missionary flex" id="missionary">
+      <section>
+         <h4>Long-term Stays- <span>$1,500/mo</span></h4>
+         <p>Called to a foreign land? Our long-term stay program is perfect for couples missionaries. We even have a specialized staff that are fluent in English.</p>
+         <p>Details:</p>
+         <ul>
+            <li>6 month lease agreements</li>
+            <li>Full kitchen in each suite</li>
+            <li>Free breakfast</li>
+            <li>Storage unit 8' X 10'
+            </li>
+            <li>Optional: Grocery delivery ($20ea)</li>
+         </ul>
+      </section>
+      <section class="pics">
+         <img src="images/cebuKitchen.jpeg" alt="Cebu Kitchen">
+         <img src="images/guamKitchen.jpeg" alt="Guam Kitchen">
+         <img src="images/hongkongKitchen.jpeg" alt="Hong Kong Kitchen">
+         <img src="images/manilaKitchen.jpeg" alt="Manila Kitchen">
+      </section>
+   </div>
+   <div class="flex contact">
+      <section class="cInfo">
+         <h3>Have questions? Reach out to us.</h3>
+         <p>Phone: (208) 932-5005</p>
+         <p>Email: hello@templeinn.com</p>
+         <br>
+         <ul>
+            <li>4800 Montgomery Ln</li>
+            <li>#300</li>
+            <li>Bethesda, MD 20814</li>
+         </ul>
+      </section>
+      <section class="map">
+         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3101.405019701323!2d-77.09772048459122!3d38.98325177955754!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b7c97b6b3b5b43%3A0x9c8eb1c5547b83eb!2s4800%20Montgomery%20Ln%20%23300%2C%20Bethesda%2C%20MD%2020814!5e0!3m2!1sen!2sus!4v1608055751565!5m2!1sen!2sus" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+      </section>
+      
+   </div> 
+   <section class="cForm">
+      <div class="container">
+         <div class="row header">
+         <h1>CONTACT US &nbsp;</h1>
+         <h3>Fill out the form below to learn more!</h3>
+         </div>
+         <div class="row body">
+         <form action="thanks2.html">
+            <ul>
+               
+               <li>
+               <p class="left">
+                  <label for="first_name">First name</label>
+                  <input type="text" name="first_name" placeholder="Jacob" />
+               </p>
+               <p class="pull-right">
+                  <label for="last_name">Last name</label>
+                  <input type="text" name="last_name" placeholder="Belnap" />      
+               </p>
+               </li>
+               
+               <li>
+               <p>
+                  <label for="email">Email <span class="req">*</span></label>
+                  <input type="email" name="email" placeholder="jacob.belnap@gmail.com" />
+               </p>
+               </li>        
+               <li><div class="divider"></div></li>
+               <li>
+               <label for="comments">Comments</label>
+               <textarea cols="46" rows="3" name="comments"></textarea>
+               </li>
+               
+               <li>
+               <input class="btn btn-submit" type="submit" value="Submit" />
+               <small>or press <strong>enter</strong></small>
+               </li>
+               
+            </ul>
+         </form>  
+         </div>
+      </div>
+   </section>  
+
+
+</main>
+
+<footer>
+   <div class="leftFooter"> 
+      <p>&copy; <span id="curYear"></span> Temple Inn & Suites LLC</p>
+      <p>4800 Montgomery Ln #300</p>
+      <p>Bethesda, MD 20814</p>
+    </div>
+    <div class="rightFooter">
+       <h4>Contact Us</h4>
+       <section>
+          <a href="https://facebook.com" target="_blank">
+            <img src="images/facebookIcon.webp" alt="facebook">
+            <p>www.facebook.com</p>
+          </a>
+       </section>
+       <section>
+         <a href="https://instagram.com" target="_blank">
+            <img src="images/instagramIcon.webp" alt="instagram">
+            <p>www.instagram.com</p>
+         </a>
+      </section>
+      <section>
+         <a href="https://twitter.com" target="_blank">
+            <img src="images/twitterIcon.webp" alt="twitter">
+            <p>www.twitter.com</p>
+         </a>
+      </section>
+    </div>
+  
+ </footer>
+ <script src="scripts/curDate.js"></script>
+ <script src="scripts/toggle.js"></script>
+ <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+ <script>WebFont.load({google: {families: ['Mukta']}});</script>
+</body>
+</html>

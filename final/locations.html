@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <meta name="description" content="Home Page for Temple Inn and Suites.">
+   <title>Temple Inn & Suites</title>
+   <link rel="shortcut icon" href="images/moroni.ico">
+   <link rel="stylesheet" href="styles/locations.css">
+   <link rel="stylesheet" href="styles/normalize.css">
+</head>
+<body>
+<header>
+   <div class="upper">
+      <div class="leftSide">
+         <span id="logo"><img src="images/logoFull.png" alt="Temple Inn & Suites Logo"></span>
+      </div>
+      <div class="rightSide">
+         <ul class="navigation">
+               <li class="ham"><a href="#">&#9776;</a></li>
+               <li><a href="index.html">Home</a></li>
+               <li><a href="#" class="underline">Locations</a></li>
+               <li><a href="services.html">Services</a></li>
+               <li id="phone"><a href="#">(208) 932-5005</a></li>   
+         </ul>
+      </div>
+   </div>
+   <div class="gray"></div>
+   <div class="hero">
+      <picture>
+         <source class="heroImg" srcset="images/locHero/locHeroMedium.jpg" media="(min-width:830px) and (max-width:1150px)">
+            <source  class="heroImg" srcset="images/locHero/locHeroLarge.jpg" media="(min-width:1150px)">
+         <img  class="heroImg" src="images/locHero/locHeroSmall.jpg" alt="Beautiful Beach Resort">
+      </picture>
+   </div>
+</header>
+<main>
+   <div class="intro">
+      <h2>Our Locations</h2>
+      <p>At Temple Inn & Suites we are more than just a hotel chain. </p>
+      <p>We scare because we care. </p>
+      <p>You must be the Monopoly Guy.</p>
+      <p>Thanks for the free parking</p>
+   </div>
+   <div class="templeList">
+      <section class="city color" id="cebu"> 
+         <div>
+            <h2>Cebu<span id="makeReservation"><a href="reservation.html">Reserve</a></span></h2>
+            <section class="info">
+               <div class="templeInfo_cebu line"></div>
+               <div id="weatherInfo_cebu" class="line"> 
+                  <h4>Weather Summary:</h4>
+                  <p>Currently: <span id="curTemp" class="num"></span></p>
+                  <p>High: <span id="highTemp" class="num"></span></p>
+                  <p>Wind Chill: <span id="windChill" class="num"></span></p>
+                  <p>Humidity: <span id="humidity" class="num"></span></p>
+                  <p>Wind Speed: <span id="windSpeed" class="num"></span></p>
+               </div>
+            </section>
+         </div>
+         <div class="gallery_cebu gal"></div>
+      </section>
+      <section class="city" id="hongkong"> 
+         <div>
+            <h2>Hong Kong<span id="makeReservation"><a href="reservation.html">Reserve</a></span></h2>
+            <section class="info">
+               <div class="templeInfo_hongkong line"></div>
+               <div id="weatherInfo_hongkong" class="line">
+                  <h4>Weather Summary:</h4>
+                  <p>Currently: <span id="curTemp" class="num"></span></p>
+                  <p>High: <span id="highTemp" class="num"></span></p>
+                  <p>Wind Chill: <span id="windChill" class="num"></span></p>
+                  <p>Humidity: <span id="humidity" class="num"></span></p>
+                  <p>Wind Speed: <span id="windSpeed" class="num"></span></p>
+               </div>
+            </section>
+         </div>
+         <div class="gallery_hongkong gal"></div>
+      </section>
+      <section class="city color" id="guam"> 
+         <div>
+            <h2>Guam<span id="makeReservation"><a href="reservation.html">Reserve</a></span></h2>
+            <section class="info">
+               <div class="templeInfo_guam line"></div>
+               <div id="weatherInfo_guam" class="line">
+                  <h4>Weather Summary:</h4>
+                  <p>Currently: <span id="curTemp" class="num"></span></p>
+                  <p>High: <span id="highTemp" class="num"></span></p>
+                  <p>Wind Chill: <span id="windChill" class="num"></span></p>
+                  <p>Humidity: <span id="humidity" class="num"></span></p>
+                  <p>Wind Speed: <span id="windSpeed" class="num"></span></p>
+               </div>
+            </section>
+         </div>
+         <div class="gallery_guam gal"></div>
+      </section>
+      <section class="city" id="manila"> 
+         <div>
+            <h2>Manila<span id="makeReservation"><a href="reservation.html">Reserve</a></span></h2>
+            <section class="info">
+               <div class="templeInfo_manila line"></div>
+               <div id="weatherInfo_manila" class="line"> 
+                  <h4>Weather Summary:</h4>
+                  <p>Currently: <span id="curTemp" class="num"></span></p>
+                  <p>High: <span id="highTemp" class="num"></span></p>
+                  <p>Wind Chill: <span id="windChill" class="num"></span></p>
+                  <p>Humidity: <span id="humidity" class="num"></span></p>
+                  <p>Wind Speed: <span id="windSpeed" class="num"></span></p>
+               </div>
+            </section>
+         </div>
+         <div class="gallery_manila gal">
+         </div>
+      </section>
+
+   </div>
+</main>
+
+<footer>
+   <div class="leftFooter"> 
+      <p>&copy; <span id="curYear"></span> Temple Inn & Suites LLC</p>
+      <p>4800 Montgomery Ln #300</p>
+      <p>Bethesda, MD 20884</p>
+    </div>
+    <div class="rightFooter">
+       <h4>Contact Us</h4>
+       <section>
+          <a href="https://facebook.com" target="_blank">
+            <img src="images/facebookIcon.webp" alt="facebook">
+            <p>www.facebook.com</p>
+          </a>
+       </section>
+       <section>
+         <a href="https://instagram.com" target="_blank">
+            <img src="images/instagramIcon.webp" alt="instagram">
+            <p>www.instagram.com</p>
+         </a>
+      </section>
+      <section>
+         <a href="https://twitter.com" target="_blank">
+            <img src="images/twitterIcon.webp" alt="twitter">
+            <p>www.twitter.com</p>
+         </a>
+      </section>
+    </div>
+  
+ </footer>
+ <script src="scripts/curDate.js"></script>
+ <script src="scripts/toggle.js"></script>
+ <script src="scripts/locations.js"></script>
+ <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+ <script>WebFont.load({google: {families: ['Mukta']}});</script>
+</body>
+</html>

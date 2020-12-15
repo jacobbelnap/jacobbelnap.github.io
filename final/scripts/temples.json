@@ -21,7 +21,7 @@
        "dedicated": "25 September 1984",
        "services": [
          "clothing rental",
-         " distribution center nearby",
+         "distribution center nearby",
          "cafeteria closed"
        ]
      },
@@ -48,6 +48,7 @@
         "clothing rental",
         "distribution center nearby"
       ]
-     }
-   ]
- }
+    }
+  ]
+  
+}
