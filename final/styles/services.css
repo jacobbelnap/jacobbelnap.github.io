@@ -1,6 +1,9 @@
 main{
    text-align: center;
 }
+main li{
+   list-style-type: none;
+}
 .intro li{
    list-style-type: none;
    text-align: left;
@@ -16,7 +19,7 @@ main{
    
 }
 .wed span{
-font-size: 1.2em;
+   font-size: 1.2em;
 }
 
 .missionary span{
@@ -46,8 +49,7 @@ font-size: 1.2em;
    list-style-type: none;
    margin-right: 30px;
 }
-.cForm{
-}
+
 .cForm li{
    list-style-type: none;
 }
